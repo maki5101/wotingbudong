@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 由 tools/gen_strings.py 生成：改文字改那里再生成，别手改。默认（values/）是英文 -->
+<resources>
+    <string name="app_name">Wotingbudong</string>
+    <string name="subtype_label">Wotingbudong voice input</string>
+    <string name="a11y_label">Wotingbudong · quick switch</string>
+    <string name="a11y_description">When another keyboard pops up, shows a small mic above it; one tap switches the current field to the voice orb. When the Tasker plugin starts recognition, it also checks whether you\'re in a text field and switches the keyboard here. It only looks at keyboard windows appearing or disappearing and whether the focus is a text field — it doesn\'t read the text on screen or intercept keys.</string>
+    <string name="settings_title">Wotingbudong · Settings</string>
+    <string name="cat_enable">Setup</string>
+    <string name="enable_ime_title">Enable this keyboard in the system</string>
+    <string name="enable_ime_summary">Opens the system\'s keyboard settings; turn on “Wotingbudong”</string>
+    <string name="pick_ime_title">Switch to this keyboard</string>
+    <string name="mic_title">Microphone permission</string>
+    <string name="a11y_title">Quick switch (accessibility service)</string>
+    <string name="a11y_button_title">Switch button in the navigation bar</string>
+    <string name="a11y_button_summary">With the accessibility service on, assign the system\'s accessibility button to “Wotingbudong · quick switch”: a button appears in the navigation bar that switches between Wotingbudong and your previous keyboard. Tap here to set it up.</string>
+    <string name="bubble_title">Show a small microphone above other keyboards</string>
+    <string name="bubble_summary">Needs the accessibility service. Off by default; the navigation-bar button is handier</string>
+    <string name="cat_pc">Recognition service</string>
+    <string name="server_title">URL</string>
+    <string name="server_dialog">The service\'s API URL; filled in automatically when you pick a provider. For Shuohuaa, use the “Phone API” line of ./shuohuaa status on the computer, e.g. http://100.x.y.z:9797</string>
+    <string name="token_title">API key / token (optional)</string>
+    <string name="token_summary">The provider\'s API key; for Shuohuaa, SHUOHUAA_API_TOKEN from the computer\'s .env (leave empty if not set)</string>
+    <string name="test_title">Test connection</string>
+    <string name="test_summary">Checks whether the main and fallback services are reachable and the API keys work</string>
+    <string name="cat_mic">Phone as the computer\'s microphone</string>
+    <string name="mic_mode_title">Microphone mode</string>
+    <string name="mic_mode_summary">Streams the phone\'s microphone to the computer, where it can be chosen as the audio source (e.g. when you use the computer remotely). Stays connected; mute or stop from the notification</string>
+    <string name="mic_muted_title">Mute</string>
+    <string name="mic_muted_summary">While muted the microphone is off and nothing is sent; the connection stays open</string>
+    <string name="mic_port_title">Microphone port</string>
+    <string name="mic_port_dialog">PHONE_MIC_PORT on the computer</string>
+    <string name="cat_fallback">Fallback service (used when the main one is unreachable, optional)</string>
+    <string name="fallback_title">URL</string>
+    <string name="fallback_dialog">Same as for the main service; empty = no fallback</string>
+    <string name="fallback_key_title">API key / token</string>
+    <string name="fallback_model_title">Model</string>
+    <string name="hold_ms_title">Hold longer than this for push-to-talk (ms)</string>
+    <string name="silence_ms_title">Silence that ends a segment (ms)</string>
+    <string name="rms_title">Speech detection level (higher = less sensitive)</string>
+    <string name="max_seg_title">Max segment length (s)</string>
+    <string name="max_seg_summary">Safety net for long uninterrupted speech: when reached, the segment is cut at the nearest quiet moment and typed. Lower = faster feedback, more requests</string>
+    <string name="idle_stop_title">Stop recording after this much silence (s)</string>
+    <string name="idle_stop_summary">In case you forget to stop. 0 = record until you stop it</string>
+    <string name="haptic_title">Vibrate on start/stop</string>
+    <string name="orb_color_title">Orb color</string>
+    <string name="orb_size_title">Orb size (dp)</string>
+    <string name="orb_size_summary">The small buttons scale with it</string>
+    <string name="orb_alpha_title">Orb opacity (higher = more opaque)</string>
+    <string name="edge_margin_title">Distance from the screen edge when docked (dp)</string>
+    <string name="edge_margin_summary">Increase it if you keep triggering edge gestures; the back-gesture zone is about 24</string>
+    <string name="auto_start_title">Start recording when switching to this keyboard</string>
+    <string name="auto_start_summary">No need to tap the orb</string>
+    <string name="hand_back_title">Hand back to your keyboard when a field reopens</string>
+    <string name="hand_back_summary">If this keyboard is still selected when you next open a text field, switch back to your usual keyboard automatically</string>
+    <string name="toast_grant_mic">Grant microphone access first</string>
+    <string name="toast_connecting">Connecting…</string>
+    <string name="a11y_on">On: the navigation-bar accessibility button, the small mic above other keyboards and the Tasker plugin can switch here. Flip to turn off</string>
+    <string name="a11y_off">Off. Flipping it opens system settings — turn on “Wotingbudong · Quick switch” there. Samsung phones first need “Allow restricted settings” in App info</string>
+    <string name="mic_granted">Granted</string>
+    <string name="mic_denied">Not granted — tap to grant (needed for recording)</string>
+    <string name="hint_no_mic">No microphone permission, tap the gear to grant it</string>
+    <string name="hint_idle_stopped">Nobody spoke for a while, stopped</string>
+    <string name="hint_fallback_used">Main service unreachable — this sentence used the fallback</string>
+    <string name="hint_undo_mismatch">The text before the cursor has changed, nothing deleted</string>
+    <string name="hint_undone_continue">Undone, keep talking</string>
+    <string name="hint_undone">Undone</string>
+    <string name="hint_nothing_to_undo">Nothing to undo</string>
+    <string name="hint_switch_after">Switching back to the keyboard after this sentence</string>
+    <string name="key_send">Send</string>
+    <string name="key_search">Search</string>
+    <string name="key_go">Go</string>
+    <string name="key_done">Done</string>
+    <string name="key_next">Next</string>
+    <string name="punct_comma">", "</string>
+    <string name="punct_period">". "</string>
+    <string name="punct_question">"? "</string>
+    <string name="hint_field_unsuitable">Use the keyboard for password and number fields</string>
+    <string name="cd_orb_start">Start voice input</string>
+    <string name="cd_orb_stop">Stop recording</string>
+    <string name="cd_keyboard">Switch to keyboard</string>
+    <string name="cd_undo">Undo last sentence</string>
+    <string name="cd_edit">Show or hide editing keys</string>
+    <string name="cd_settings">Settings</string>
+    <string name="cd_left">Move cursor left</string>
+    <string name="cd_right">Move cursor right</string>
+    <string name="cd_delete">Delete</string>
+    <string name="cd_space">Space</string>
+    <string name="cd_enter">Enter</string>
+    <string name="stream_mode_title">How text appears</string>
+    <string name="remove_fillers_title">Remove filler words</string>
+    <string name="remove_fillers_summary">Don\'t type \'uh\', \'um\' and similar. A meaningful \'mm-hm\' is removed too</string>
+    <string name="cd_preview_insert">Insert previewed text</string>
+    <string name="health_http">The service answered HTTP %1$d: %2$s</string>
+    <string name="health_fail">Can\'t connect: %1$s</string>
+    <string name="err_pc_down">Main service unreachable (%1$d attempts): %2$s</string>
+    <string name="err_recent_fail">failed within the last 30 s</string>
+    <string name="err_both_down">Neither the main nor the fallback service can be reached: %1$s</string>
+    <string name="err_no_server">No recognition service set yet (Settings → Recognition service)</string>
+    <string name="mic_connecting">Connecting…</string>
+    <string name="mic_retry">Can\'t reach the computer (%1$s), retrying in %2$d s</string>
+    <string name="mic_stopped">Stopped</string>
+    <string name="mic_idle_title">Turn off when the computer hasn\'t used it for (min)</string>
+    <string name="mic_idle_summary">The computer decides: if it hasn\'t recorded from the phone mic for this long, the phone turns it off. Background sound doesn\'t matter. Also counts while not connected. 0 = never</string>
+    <string name="mic_idle_stopped">PC microphone: turned off after %1$d minutes unused</string>
+    <string name="mic_title_offline">Phone microphone: can\'t reach the computer</string>
+    <string name="mic_unreachable">PC microphone can\'t reach the computer: %1$s. Retrying automatically</string>
+    <string name="mic_reconnected">PC microphone connected</string>
+    <string name="mic_err_timeout">connection timed out; check the network between the phone and the computer</string>
+    <string name="mic_err_refused">the computer isn\'t listening; is the Shuohuaa service running?</string>
+    <string name="remote_confirm">Not in a text field. Press again to record on the computer with the phone as mic</string>
+    <string name="remote_started">Recording on the computer</string>
+    <string name="remote_stopped">Computer recording stopped</string>
+    <string name="remote_notify_title">Tap to turn on the PC microphone and start recording on the computer</string>
+    <string name="pc_recording_badge">● Computer recording</string>
+    <string name="mic_title_pc_recording">Phone microphone: the computer is recording</string>
+    <string name="mic_bad_server">No computer address set for microphone mode</string>
+    <string name="mic_refused">Refused by the computer: %1$s</string>
+    <string name="mic_connected">Connected to %1$s</string>
+    <string name="mic_open_fail">Can\'t open the microphone</string>
+    <string name="mic_channel">Phone as the computer\'s microphone</string>
+    <string name="mic_title_muted">Phone microphone: muted</string>
+    <string name="mic_title_paused">Phone microphone: paused during voice input</string>
+    <string name="mic_title_live">Phone microphone: streaming to the computer</string>
+    <string name="mic_unmute">Unmute</string>
+    <string name="mic_mute">Mute</string>
+    <string name="mic_stop">Stop</string>
+    <string name="model_title">Model</string>
+    <string name="model_dialog">Filled in with the provider\'s default model; you can change it. Not needed for Shuohuaa (it uses the computer\'s current model). Empty = whisper-1</string>
+    <string name="err_bad_url">The URL is not valid: %1$s</string>
+    <string name="health_openai">Reachable</string>
+    <string name="health_auth">Wrong API key (HTTP %1$d)</string>
+    <string name="test_primary">Main: %1$s</string>
+    <string name="test_fallback">Fallback: %1$s</string>
+    <string name="mic_host_title">Computer address</string>
+    <string name="mic_host_dialog">The computer running Shuohuaa, e.g. 100.x.y.z (the “Phone microphone” line of ./shuohuaa status)</string>
+    <string name="mic_token_title">Token (optional)</string>
+    <string name="mic_token_summary">SHUOHUAA_API_TOKEN from that computer\'s .env; leave empty if not set</string>
+    <string name="provider_title">Provider</string>
+    <string name="provider_shuohuaa">Shuohuaa (your computer)</string>
+    <string name="provider_custom">Other (OpenAI-compatible)</string>
+    <string name="stream_note">Live text sends the recording for recognition every 0.7 s while you speak — with a pay-per-request cloud service that means many more requests</string>
+    <string name="tile_mic">PC microphone</string>
+    <string name="hint_external_no_field">Not in a text field</string>
+    <string name="hint_external_need_switch">Turn on Quick switch in Settings to switch here from another keyboard</string>
+    <string name="hint_external_old_android">Switching keyboards needs Android 11 or later</string>
+    <string name="hint_external_switch_failed">Couldn\'t switch: enable the Wotingbudong keyboard in system settings first</string>
+    <string name="tasker_plugin_label">Wotingbudong: voice input</string>
+    <string name="tasker_pick_title">What to do</string>
+    <string name="tasker_pick_title_caller">For %1$s: what to do</string>
+    <string name="tasker_toggle">Toggle (stop if running, start if not)</string>
+    <string name="tasker_start">Start</string>
+    <string name="tasker_stop">Stop</string>
+    <string name="tasker_token_changed">This Tasker action is no longer valid — reopen it in Tasker</string>
+    <string name="tab_start">Get started</string>
+    <string name="tab_service">Service</string>
+    <string name="tab_voice">Speaking &amp; text</string>
+    <string name="tab_look">Look</string>
+    <string name="tab_mic">PC microphone</string>
+    <string name="restore_defaults_title">Restore this page\'s defaults</string>
+    <string name="restore_defaults_summary">Only this page; you can undo it</string>
+    <string name="restore_confirm">Everything on this page goes back to its default. You can undo it for a few seconds afterwards.</string>
+    <string name="restore_ok">Restore</string>
+    <string name="undo">Undo</string>
+    <string name="changed_one">Changed: %1$s</string>
+    <string name="changed_many">Changed %1$d settings</string>
+    <string name="restored">This page\'s defaults restored</string>
+    <string name="a11y_prompt_channel">Quick switch reminders</string>
+    <string name="a11y_prompt_title">Quick switch is off</string>
+    <string name="a11y_prompt_text">Tap to turn it on so Tasker can switch here from another keyboard</string>
+    <string-array name="orb_color_entries">
+        <item>Follow system</item>
+        <item>Blue</item>
+        <item>Green</item>
+        <item>Purple</item>
+        <item>Orange</item>
+        <item>Pink</item>
+    </string-array>
+    <string-array name="stream_mode_entries">
+        <item>While you speak (underlined until final)</item>
+        <item>Preview first, tap to insert</item>
+        <item>After each pause</item>
+    </string-array>
+</resources>

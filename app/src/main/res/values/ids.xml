@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 设置页标签内容的容器：id 要固定，转屏/深色模式重建时片段按它找回容器（动态生成的 id 每次都变，页面变空白） -->
+    <item name="settings_page" type="id" />
+</resources>

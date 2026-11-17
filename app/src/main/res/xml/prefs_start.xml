@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory android:title="@string/cat_enable">
+        <Preference android:key="enable_ime" android:title="@string/enable_ime_title"
+            android:summary="@string/enable_ime_summary" />
+        <Preference android:key="pick_ime" android:title="@string/pick_ime_title" />
+        <Preference android:key="mic" android:title="@string/mic_title" />
+        <SwitchPreferenceCompat android:key="a11y" android:title="@string/a11y_title" android:persistent="false" />
+        <Preference android:key="a11y_button" android:title="@string/a11y_button_title"
+            android:summary="@string/a11y_button_summary" />
+        <SwitchPreferenceCompat android:key="bubble" android:title="@string/bubble_title"
+            android:summary="@string/bubble_summary" android:defaultValue="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

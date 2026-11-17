@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 显示名在各语言的 strings.xml 里（orb_color_entries） -->
+    <string-array name="orb_color_values" translatable="false">
+        <item>follow</item><item>blue</item><item>green</item><item>purple</item><item>orange</item><item>pink</item>
+    </string-array>
+    <!-- 出字方式，显示名在各语言的 strings.xml 里（stream_mode_entries） -->
+    <string-array name="stream_mode_values" translatable="false">
+        <item>live</item><item>confirm</item><item>off</item>
+    </string-array>
+    <!-- 识别服务商（Providers）：默认地址、模型和发不发扩展参数在 Providers.kt。品牌名不翻译 -->
+    <string-array name="provider_entries" translatable="false">
+        <item>@string/provider_shuohuaa</item>
+        <item>OpenAI</item>
+        <item>Groq</item>
+        <item>SiliconFlow</item>
+        <item>@string/provider_custom</item>
+    </string-array>
+    <string-array name="provider_values" translatable="false">
+        <item>shuohuaa</item>
+        <item>openai</item>
+        <item>groq</item>
+        <item>siliconflow</item>
+        <item>custom</item>
+    </string-array>
+</resources>

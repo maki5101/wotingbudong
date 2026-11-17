@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory android:title="@string/tab_look">
+        <ListPreference android:key="orb_color" android:title="@string/orb_color_title"
+            android:entries="@array/orb_color_entries" android:entryValues="@array/orb_color_values"
+            android:defaultValue="follow" app:useSimpleSummaryProvider="true" />
+        <SeekBarPreference android:key="orb_size" android:title="@string/orb_size_title"
+            android:summary="@string/orb_size_summary" android:defaultValue="56" android:max="96" app:min="40" app:showSeekBarValue="true" />
+        <SeekBarPreference android:key="orb_alpha" android:title="@string/orb_alpha_title"
+            android:defaultValue="82" android:max="100" app:min="30" app:showSeekBarValue="true" />
+        <SeekBarPreference android:key="edge_margin" android:title="@string/edge_margin_title"
+            android:summary="@string/edge_margin_summary" android:defaultValue="6" android:max="48" app:min="0" app:showSeekBarValue="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory>
+        <Preference android:key="restore_defaults" android:title="@string/restore_defaults_title"
+            android:summary="@string/restore_defaults_summary" />
+    </PreferenceCategory>
+</PreferenceScreen>

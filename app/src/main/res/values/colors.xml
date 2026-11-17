@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="orb_idle">#5C6BC0</color>
+    <color name="orb_recording">#E53935</color>
+    <color name="orb_busy">#FB8C00</color>
+    <color name="orb_error">#9E9E9E</color>
+</resources>

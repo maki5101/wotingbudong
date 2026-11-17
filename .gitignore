@@ -1,0 +1,25 @@
+# Gradle / IDE
+.gradle/
+build/
+.kotlin/
+local.properties
+.idea/
+*.iml
+
+# 产物
+*.apk
+
+# 签名密钥，绝对不要提交
+keystore.properties
+*.jks
+*.keystore
+
+dist/
+
+# 本机私人笔记、私人扫描规则（tools/privacy_scan.py 读）
+.private/
+
+# Python 缓存（tools/ 里的脚本跑过就有）
+__pycache__/
+CLAUDE.md
+HANDOVER.md

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 由 tools/gen_strings.py 生成：改文字改那里再生成，别手改。默认（values/）是英文 -->
+<resources>
+    <string name="app_name">Wotingbudong</string>
+    <string name="subtype_label">إدخال صوتي Wotingbudong</string>
+    <string name="a11y_label">Wotingbudong · تبديل سريع</string>
+    <string name="a11y_description">عند ظهور لوحة مفاتيح أخرى يعرض ميكروفونًا صغيرًا فوقها، ونقرة واحدة تحوّل الحقل الحالي إلى الكرة الصوتية. وعندما تبدأ إضافة Tasker التعرّف يُستخدم أيضًا لمعرفة ما إذا كنت في حقل نص وللتبديل إلى لوحة المفاتيح هذه. لا يراقب سوى ظهور نوافذ لوحة المفاتيح واختفائها وما إذا كان التركيز على حقل نص، ولا يقرأ النص على الشاشة ولا يعترض المفاتيح.</string>
+    <string name="settings_title">Wotingbudong · الإعدادات</string>
+    <string name="cat_enable">الإعداد</string>
+    <string name="enable_ime_title">تفعيل لوحة المفاتيح هذه في النظام</string>
+    <string name="enable_ime_summary">يفتح إعدادات لوحات المفاتيح؛ فعّل «Wotingbudong»</string>
+    <string name="pick_ime_title">التبديل إلى لوحة المفاتيح هذه</string>
+    <string name="mic_title">إذن الميكروفون</string>
+    <string name="a11y_title">تبديل سريع (خدمة إمكانية الوصول)</string>
+    <string name="a11y_button_title">زر التبديل في شريط التنقل</string>
+    <string name="a11y_button_summary">بعد تفعيل خدمة إمكانية الوصول، اربط زر إمكانية الوصول في النظام بـ «Wotingbudong · تبديل سريع»: يظهر زر في شريط التنقل للتبديل بينه وبين لوحة مفاتيحك السابقة. انقر هنا للإعداد.</string>
+    <string name="bubble_title">ميكروفون صغير فوق لوحات المفاتيح الأخرى</string>
+    <string name="bubble_summary">يتطلب خدمة إمكانية الوصول. متوقف افتراضيًا؛ زر شريط التنقل أسهل</string>
+    <string name="cat_pc">خدمة التعرّف على الكلام</string>
+    <string name="server_title">العنوان</string>
+    <string name="server_dialog">عنوان واجهة الخدمة، يُملأ تلقائيًا عند اختيار المزوّد. لـ Shuohuaa استخدم سطر «واجهة الهاتف» من ./shuohuaa status على الحاسوب، مثل http://100.x.y.z:9797</string>
+    <string name="token_title">مفتاح API / الرمز (اختياري)</string>
+    <string name="token_summary">مفتاح API من المزوّد؛ لـ Shuohuaa استخدم SHUOHUAA_API_TOKEN من ملف .env في الحاسوب (اتركه فارغًا إن لم يُضبط)</string>
+    <string name="test_title">اختبار الاتصال</string>
+    <string name="test_summary">يتحقق من إمكانية الوصول إلى الخدمة الرئيسية والاحتياطية وصحة مفاتيح API</string>
+    <string name="cat_mic">الهاتف كميكروفون للحاسوب</string>
+    <string name="mic_mode_title">وضع الميكروفون</string>
+    <string name="mic_mode_summary">يبث ميكروفون الهاتف باستمرار إلى الحاسوب حيث يمكن اختياره مصدرًا للصوت (مثلًا عند الاستخدام عن بُعد). يبقى متصلًا؛ الكتم أو الإيقاف من الإشعار</string>
+    <string name="mic_muted_title">كتم</string>
+    <string name="mic_muted_summary">أثناء الكتم يُطفأ الميكروفون ولا يُرسل شيء؛ يبقى الاتصال مفتوحًا</string>
+    <string name="mic_port_title">منفذ الميكروفون</string>
+    <string name="mic_port_dialog">PHONE_MIC_PORT على الحاسوب</string>
+    <string name="cat_fallback">خدمة احتياطية (عند تعذّر الوصول إلى الرئيسية، اختياري)</string>
+    <string name="fallback_title">العنوان</string>
+    <string name="fallback_dialog">مثل الخدمة الرئيسية؛ فارغ = بلا احتياطي</string>
+    <string name="fallback_key_title">مفتاح API / الرمز</string>
+    <string name="fallback_model_title">النموذج</string>
+    <string name="hold_ms_title">الضغط لأطول من هذا = اضغط للتحدث (مللي ثانية)</string>
+    <string name="silence_ms_title">الصمت الذي ينهي المقطع (مللي ثانية)</string>
+    <string name="rms_title">عتبة اكتشاف الكلام (أعلى = أقل حساسية)</string>
+    <string name="max_seg_title">أقصى طول للمقطع (ث)</string>
+    <string name="max_seg_summary">احتياط للكلام الطويل دون توقف: يُقطع المقطع عند أقرب لحظة هادئة ويُكتب. أقل = استجابة أسرع وطلبات أكثر</string>
+    <string name="idle_stop_title">إيقاف التسجيل بعد هذا القدر من الصمت (ث)</string>
+    <string name="idle_stop_summary">في حال نسيت الإيقاف. 0 = حتى توقفه بنفسك</string>
+    <string name="haptic_title">اهتزاز عند البدء/الإيقاف</string>
+    <string name="orb_color_title">لون الكرة</string>
+    <string name="orb_size_title">حجم الكرة (dp)</string>
+    <string name="orb_size_summary">تتغير الأزرار الصغيرة معها</string>
+    <string name="orb_alpha_title">عتامة الكرة (أعلى = أكثر عتامة)</string>
+    <string name="edge_margin_title">المسافة من حافة الشاشة عند الالتصاق (dp)</string>
+    <string name="edge_margin_summary">زِدها إن كنت تفعّل إيماءات الحافة بالخطأ؛ منطقة إيماءة الرجوع نحو 24</string>
+    <string name="auto_start_title">بدء التسجيل عند التبديل إلى لوحة المفاتيح هذه</string>
+    <string name="auto_start_summary">لا حاجة للنقر على الكرة</string>
+    <string name="hand_back_title">العودة إلى لوحة مفاتيحك عند إعادة فتح حقل</string>
+    <string name="hand_back_summary">إذا ظلت لوحة المفاتيح هذه محددة عند فتح حقل نص، يتم الرجوع تلقائيًا إلى لوحتك المعتادة</string>
+    <string name="toast_grant_mic">اسمح بالوصول إلى الميكروفون أولًا</string>
+    <string name="toast_connecting">جارٍ الاتصال…</string>
+    <string name="a11y_on">مفعّل: يمكن لزر إمكانية الوصول في شريط التنقل والميكروفون الصغير فوق لوحات المفاتيح الأخرى وإضافة Tasker التبديل إلى هنا. اقلب المفتاح للإيقاف</string>
+    <string name="a11y_off">غير مفعّل. قلب المفتاح يفتح إعدادات النظام؛ فعّل هناك «Wotingbudong · التبديل السريع». في هواتف سامسونج اسمح أولًا بالإعدادات المقيّدة من معلومات التطبيق</string>
+    <string name="mic_granted">ممنوح</string>
+    <string name="mic_denied">غير ممنوح — انقر للسماح (مطلوب للتسجيل)</string>
+    <string name="hint_no_mic">لا يوجد إذن للميكروفون، انقر على الترس للسماح</string>
+    <string name="hint_idle_stopped">لم يتحدث أحد لفترة، تم الإيقاف</string>
+    <string name="hint_fallback_used">تعذّر الوصول إلى الخدمة الرئيسية، فاستُخدمت الاحتياطية لهذه الجملة</string>
+    <string name="hint_undo_mismatch">تغيّر النص قبل المؤشر، لم يُحذف شيء</string>
+    <string name="hint_undone_continue">تم التراجع، تابع الكلام</string>
+    <string name="hint_undone">تم التراجع</string>
+    <string name="hint_nothing_to_undo">لا يوجد ما يُتراجع عنه</string>
+    <string name="hint_switch_after">العودة إلى لوحة المفاتيح بعد هذه الجملة</string>
+    <string name="key_send">إرسال</string>
+    <string name="key_search">بحث</string>
+    <string name="key_go">انتقال</string>
+    <string name="key_done">تم</string>
+    <string name="key_next">التالي</string>
+    <string name="punct_comma">"، "</string>
+    <string name="punct_period">". "</string>
+    <string name="punct_question">"؟ "</string>
+    <string name="hint_field_unsuitable">استخدم لوحة المفاتيح لحقول كلمات المرور والأرقام</string>
+    <string name="cd_orb_start">بدء الإدخال الصوتي</string>
+    <string name="cd_orb_stop">إيقاف التسجيل</string>
+    <string name="cd_keyboard">التبديل إلى لوحة المفاتيح</string>
+    <string name="cd_undo">التراجع عن الجملة الأخيرة</string>
+    <string name="cd_edit">إظهار مفاتيح التحرير أو إخفاؤها</string>
+    <string name="cd_settings">الإعدادات</string>
+    <string name="cd_left">تحريك المؤشر لليسار</string>
+    <string name="cd_right">تحريك المؤشر لليمين</string>
+    <string name="cd_delete">حذف</string>
+    <string name="cd_space">مسافة</string>
+    <string name="cd_enter">إدخال</string>
+    <string name="stream_mode_title">طريقة ظهور النص</string>
+    <string name="remove_fillers_title">إزالة كلمات التردد</string>
+    <string name="remove_fillers_summary">لا تُكتب «إمم» و«uh» و«um»… يُحذف أيضًا «أها» المقصود</string>
+    <string name="cd_preview_insert">إدراج النص المعروض</string>
+    <string name="health_http">ردّت الخدمة بـ HTTP %1$d: %2$s</string>
+    <string name="health_fail">تعذّر الاتصال: %1$s</string>
+    <string name="err_pc_down">تعذّر الوصول إلى الخدمة الرئيسية (%1$d محاولات): %2$s</string>
+    <string name="err_recent_fail">فشل خلال آخر 30 ث</string>
+    <string name="err_both_down">تعذّر الوصول إلى الخدمة الرئيسية والاحتياطية: %1$s</string>
+    <string name="err_no_server">لم تُضبط خدمة التعرّف بعد (الإعدادات ← خدمة التعرّف على الكلام)</string>
+    <string name="mic_connecting">جارٍ الاتصال…</string>
+    <string name="mic_retry">تعذّر الوصول إلى الحاسوب (%1$s)، إعادة المحاولة خلال %2$d ث</string>
+    <string name="mic_stopped">متوقف</string>
+    <string name="mic_idle_title">إيقاف إذا لم يستخدمه الكمبيوتر لمدة (دقيقة)</string>
+    <string name="mic_idle_summary">الكمبيوتر يقرر: إذا لم يسجّل من ميكروفون الهاتف طوال هذه المدة، يوقفه الهاتف. أصوات الخلفية لا تُحتسب. يُحتسب أيضًا دون اتصال. 0 = أبدًا</string>
+    <string name="mic_idle_stopped">ميكروفون الكمبيوتر: أُوقف بعد %1$d دقيقة دون استخدام</string>
+    <string name="mic_title_offline">ميكروفون الهاتف: تعذّر الوصول إلى الكمبيوتر</string>
+    <string name="mic_unreachable">ميكروفون الكمبيوتر لا يصل إلى الكمبيوتر: %1$s. ستتم إعادة المحاولة تلقائيًا</string>
+    <string name="mic_reconnected">تم توصيل ميكروفون الكمبيوتر</string>
+    <string name="mic_err_timeout">انتهت المهلة؛ تحقّق من الشبكة بين الهاتف والكمبيوتر</string>
+    <string name="mic_err_refused">الكمبيوتر لا يستمع؛ هل خدمة Shuohuaa تعمل؟</string>
+    <string name="remote_confirm">لست في حقل نص. اضغط مرة أخرى للتسجيل على الكمبيوتر باستخدام الهاتف كميكروفون</string>
+    <string name="remote_started">بدأ التسجيل على الكمبيوتر</string>
+    <string name="remote_stopped">توقف التسجيل على الكمبيوتر</string>
+    <string name="remote_notify_title">انقر لتشغيل ميكروفون الكمبيوتر وبدء التسجيل</string>
+    <string name="pc_recording_badge">● الكمبيوتر يسجّل</string>
+    <string name="mic_title_pc_recording">ميكروفون الهاتف: الكمبيوتر يسجّل</string>
+    <string name="mic_bad_server">لم يُضبط عنوان الحاسوب لوضع الميكروفون</string>
+    <string name="mic_refused">رفض الحاسوب: %1$s</string>
+    <string name="mic_connected">متصل بـ %1$s</string>
+    <string name="mic_open_fail">تعذّر فتح الميكروفون</string>
+    <string name="mic_channel">الهاتف كميكروفون للحاسوب</string>
+    <string name="mic_title_muted">ميكروفون الهاتف: مكتوم</string>
+    <string name="mic_title_paused">ميكروفون الهاتف: متوقف مؤقتًا أثناء الإدخال الصوتي</string>
+    <string name="mic_title_live">ميكروفون الهاتف: يبث إلى الحاسوب</string>
+    <string name="mic_unmute">إلغاء الكتم</string>
+    <string name="mic_mute">كتم</string>
+    <string name="mic_stop">إيقاف</string>
+    <string name="model_title">النموذج</string>
+    <string name="model_dialog">يُملأ بالنموذج الافتراضي للمزوّد ويمكن تغييره. غير مطلوب لـ Shuohuaa (يستخدم النموذج الحالي للحاسوب). فارغ = whisper-1</string>
+    <string name="err_bad_url">العنوان غير صالح: %1$s</string>
+    <string name="health_openai">يمكن الوصول</string>
+    <string name="health_auth">مفتاح API غير صحيح (HTTP %1$d)</string>
+    <string name="test_primary">الرئيسية: %1$s</string>
+    <string name="test_fallback">الاحتياطية: %1$s</string>
+    <string name="mic_host_title">عنوان الحاسوب</string>
+    <string name="mic_host_dialog">الحاسوب الذي يشغّل Shuohuaa، مثل 100.x.y.z (سطر «ميكروفون الهاتف» في ./shuohuaa status)</string>
+    <string name="mic_token_title">الرمز (اختياري)</string>
+    <string name="mic_token_summary">SHUOHUAA_API_TOKEN من ملف .env في ذلك الحاسوب؛ اتركه فارغًا إن لم يُضبط</string>
+    <string name="provider_title">المزوّد</string>
+    <string name="provider_shuohuaa">Shuohuaa (حاسوبك)</string>
+    <string name="provider_custom">أخرى (متوافقة مع OpenAI)</string>
+    <string name="stream_note">عرض النص أثناء الكلام يرسل التسجيل للتعرّف كل 0.7 ثانية أثناء حديثك؛ مع خدمة سحابية تُحاسب لكل طلب يعني ذلك طلبات أكثر بكثير</string>
+    <string name="tile_mic">ميكروفون الحاسوب</string>
+    <string name="hint_external_no_field">لست في حقل نص الآن</string>
+    <string name="hint_external_need_switch">فعّل التبديل السريع في الإعدادات للانتقال إلى هنا من لوحة مفاتيح أخرى</string>
+    <string name="hint_external_old_android">تبديل لوحة المفاتيح يتطلب Android 11 أو أحدث</string>
+    <string name="hint_external_switch_failed">تعذّر التبديل: فعّل لوحة مفاتيح Wotingbudong في إعدادات النظام أولًا</string>
+    <string name="tasker_plugin_label">Wotingbudong: الإدخال الصوتي</string>
+    <string name="tasker_pick_title">ماذا تفعل</string>
+    <string name="tasker_pick_title_caller">لـ %1$s: ماذا تفعل</string>
+    <string name="tasker_toggle">تبديل (إيقاف إن كان يعمل، وإلا بدء)</string>
+    <string name="tasker_start">بدء</string>
+    <string name="tasker_stop">إيقاف</string>
+    <string name="tasker_token_changed">لم يعد إجراء Tasker هذا صالحًا؛ افتحه مجددًا في Tasker</string>
+    <string name="tab_start">البدء</string>
+    <string name="tab_service">الخدمة</string>
+    <string name="tab_voice">الكلام والنص</string>
+    <string name="tab_look">المظهر</string>
+    <string name="tab_mic">ميكروفون الحاسوب</string>
+    <string name="restore_defaults_title">استعادة الإعدادات الافتراضية لهذه الصفحة</string>
+    <string name="restore_defaults_summary">هذه الصفحة فقط؛ يمكن التراجع</string>
+    <string name="restore_confirm">ستعود كل خيارات هذه الصفحة إلى قيمها الافتراضية. يمكنك التراجع لبضع ثوانٍ بعد ذلك.</string>
+    <string name="restore_ok">استعادة</string>
+    <string name="undo">تراجع</string>
+    <string name="changed_one">تم التغيير: %1$s</string>
+    <string name="changed_many">تم تغيير %1$d إعدادات</string>
+    <string name="restored">تمت استعادة الإعدادات الافتراضية لهذه الصفحة</string>
+    <string name="a11y_prompt_channel">تذكيرات التبديل السريع</string>
+    <string name="a11y_prompt_title">التبديل السريع غير مفعّل</string>
+    <string name="a11y_prompt_text">المس لتفعيله حتى يتمكن Tasker من التبديل إلى هنا من لوحة مفاتيح أخرى</string>
+    <string-array name="orb_color_entries">
+        <item>حسب النظام</item>
+        <item>أزرق</item>
+        <item>أخضر</item>
+        <item>بنفسجي</item>
+        <item>برتقالي</item>
+        <item>وردي</item>
+    </string-array>
+    <string-array name="stream_mode_entries">
+        <item>أثناء الكلام (مُسطّر حتى يكتمل)</item>
+        <item>معاينة أولًا، انقر للإدراج</item>
+        <item>بعد كل توقف</item>
+    </string-array>
+</resources>

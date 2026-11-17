@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 由 tools/gen_strings.py 生成：改文字改那里再生成，别手改。默认（values/）是英文 -->
+<resources>
+    <string name="app_name">Wotingbudong</string>
+    <string name="subtype_label">Wotingbudong 음성 입력</string>
+    <string name="a11y_label">Wotingbudong · 빠른 전환</string>
+    <string name="a11y_description">다른 키보드가 뜨면 그 위에 작은 마이크를 표시하고, 탭하면 현재 입력란을 음성 원으로 바꿉니다. Tasker 플러그인으로 인식을 시작할 때도 입력란인지 판단하고 키보드를 전환하는 데 씁니다. 키보드 창이 나타나고 사라지는지, 포커스가 입력란인지만 보며 화면의 글자는 읽지 않고 키 입력도 가로채지 않습니다.</string>
+    <string name="settings_title">Wotingbudong · 설정</string>
+    <string name="cat_enable">설정 시작</string>
+    <string name="enable_ime_title">시스템에서 이 키보드 사용 설정</string>
+    <string name="enable_ime_summary">시스템 키보드 설정을 엽니다. “Wotingbudong”을 켜세요</string>
+    <string name="pick_ime_title">이 키보드로 전환</string>
+    <string name="mic_title">마이크 권한</string>
+    <string name="a11y_title">빠른 전환 (접근성 서비스)</string>
+    <string name="a11y_button_title">내비게이션 바의 전환 버튼</string>
+    <string name="a11y_button_summary">접근성 서비스를 켠 뒤 시스템 접근성 버튼을 “Wotingbudong · 빠른 전환”에 지정하면 내비게이션 바 버튼으로 이전 키보드와 오갈 수 있습니다. 여기를 눌러 설정하세요.</string>
+    <string name="bubble_title">다른 키보드 위에 작은 마이크 표시</string>
+    <string name="bubble_summary">접근성 서비스 필요. 기본은 꺼짐 (내비게이션 바 버튼이 더 편함)</string>
+    <string name="cat_pc">음성 인식 서비스</string>
+    <string name="server_title">주소</string>
+    <string name="server_dialog">서비스의 API 주소. 제공자를 고르면 자동으로 채워집니다. Shuohuaa는 컴퓨터의 ./shuohuaa status “휴대폰 API” 줄(예: http://100.x.y.z:9797)</string>
+    <string name="token_title">API 키 / 토큰(선택)</string>
+    <string name="token_summary">제공자의 API 키. Shuohuaa는 컴퓨터 .env의 SHUOHUAA_API_TOKEN(설정 안 했으면 비워 두기)</string>
+    <string name="test_title">연결 테스트</string>
+    <string name="test_summary">기본·예비 서비스 연결과 API 키를 확인</string>
+    <string name="cat_mic">휴대폰을 PC 마이크로</string>
+    <string name="mic_mode_title">마이크 모드</string>
+    <string name="mic_mode_summary">휴대폰 마이크 소리를 PC 로 계속 보내 PC 에서 오디오 소스로 쓸 수 있습니다 (원격으로 PC 를 쓸 때 등). 연결은 유지되며 알림에서 음소거/중지할 수 있습니다</string>
+    <string name="mic_muted_title">음소거</string>
+    <string name="mic_muted_summary">음소거 중에는 마이크를 끄고 아무것도 보내지 않습니다. 연결은 유지됩니다</string>
+    <string name="mic_port_title">마이크 포트</string>
+    <string name="mic_port_dialog">컴퓨터 쪽 PHONE_MIC_PORT</string>
+    <string name="cat_fallback">예비 서비스(기본 서비스에 연결되지 않을 때, 선택)</string>
+    <string name="fallback_title">주소</string>
+    <string name="fallback_dialog">기본 서비스와 같은 형식. 비우면 예비 없음</string>
+    <string name="fallback_key_title">API 키 / 토큰</string>
+    <string name="fallback_model_title">모델</string>
+    <string name="hold_ms_title">이보다 길게 누르면 누르는 동안 말하기 (밀리초)</string>
+    <string name="silence_ms_title">구간을 나눌 무음 길이 (밀리초)</string>
+    <string name="rms_title">말소리 감지 음량 (클수록 둔감)</string>
+    <string name="max_seg_title">구간 최대 길이 (초)</string>
+    <string name="max_seg_summary">쉬지 않고 오래 말할 때의 안전장치. 한도에 이르면 가장 가까운 조용한 순간에서 잘라 입력합니다. 작을수록 반응이 빠르고 요청이 늘어납니다</string>
+    <string name="idle_stop_title">이 시간 동안 말이 없으면 녹음 중지 (초)</string>
+    <string name="idle_stop_summary">끄는 걸 잊었을 때 대비. 0 = 직접 멈출 때까지 녹음</string>
+    <string name="haptic_title">시작/중지 시 진동</string>
+    <string name="orb_color_title">원형 버튼 색상</string>
+    <string name="orb_size_title">원형 버튼 크기 (dp)</string>
+    <string name="orb_size_summary">작은 버튼도 함께 크기가 바뀝니다</string>
+    <string name="orb_alpha_title">원형 버튼 불투명도 (클수록 불투명)</string>
+    <string name="edge_margin_title">가장자리에 붙일 때 화면 끝과의 거리 (dp)</string>
+    <string name="edge_margin_summary">가장자리 제스처가 자꾸 눌리면 늘리세요 (뒤로 가기 영역은 약 24)</string>
+    <string name="auto_start_title">이 키보드로 바꾸면 녹음 시작</string>
+    <string name="auto_start_summary">원형 버튼을 누를 필요 없음</string>
+    <string name="hand_back_title">입력란을 다시 열면 원래 키보드로 돌려주기</string>
+    <string name="hand_back_summary">다음에 입력란을 열 때 아직 이 키보드라면 평소 키보드로 자동 전환합니다</string>
+    <string name="toast_grant_mic">먼저 마이크를 허용하세요</string>
+    <string name="toast_connecting">연결 중…</string>
+    <string name="a11y_on">켜짐: 내비게이션 바의 접근성 버튼, 다른 키보드 위 작은 마이크, Tasker 플러그인으로 전환할 수 있습니다. 스위치로 끄기</string>
+    <string name="a11y_off">꺼짐. 스위치를 켜면 시스템 설정이 열리니 “Wotingbudong · 빠른 전환”을 켜세요. 삼성 휴대폰은 먼저 “앱 정보”에서 제한된 설정을 허용해야 합니다</string>
+    <string name="mic_granted">허용됨</string>
+    <string name="mic_denied">허용 안 됨. 눌러서 허용 (녹음에 필요)</string>
+    <string name="hint_no_mic">마이크 권한이 없습니다. 톱니바퀴를 눌러 허용하세요</string>
+    <string name="hint_idle_stopped">한동안 말이 없어 멈췄습니다</string>
+    <string name="hint_fallback_used">기본 서비스에 연결할 수 없어 이 문장은 예비 서비스를 사용했습니다</string>
+    <string name="hint_undo_mismatch">커서 앞 문장이 바뀌어 지우지 않았습니다</string>
+    <string name="hint_undone_continue">취소됨, 계속 말하세요</string>
+    <string name="hint_undone">취소됨</string>
+    <string name="hint_nothing_to_undo">취소할 것이 없습니다</string>
+    <string name="hint_switch_after">이 문장을 입력한 뒤 키보드로 돌아갑니다</string>
+    <string name="key_send">보내기</string>
+    <string name="key_search">검색</string>
+    <string name="key_go">이동</string>
+    <string name="key_done">완료</string>
+    <string name="key_next">다음</string>
+    <string name="punct_comma">", "</string>
+    <string name="punct_period">". "</string>
+    <string name="punct_question">"? "</string>
+    <string name="hint_field_unsuitable">비밀번호·숫자 입력란은 키보드를 사용하세요</string>
+    <string name="cd_orb_start">음성 입력 시작</string>
+    <string name="cd_orb_stop">녹음 중지</string>
+    <string name="cd_keyboard">키보드로 전환</string>
+    <string name="cd_undo">마지막 문장 취소</string>
+    <string name="cd_edit">편집 키 표시/숨기기</string>
+    <string name="cd_settings">설정</string>
+    <string name="cd_left">커서 왼쪽으로</string>
+    <string name="cd_right">커서 오른쪽으로</string>
+    <string name="cd_delete">삭제</string>
+    <string name="cd_space">스페이스</string>
+    <string name="cd_enter">엔터</string>
+    <string name="stream_mode_title">글자 표시 방식</string>
+    <string name="remove_fillers_title">군말 제거</string>
+    <string name="remove_fillers_summary">\'어\', \'uh\', \'um\' 같은 말은 입력하지 않습니다. 의미 있는 맞장구도 지워집니다</string>
+    <string name="cd_preview_insert">미리 보기 텍스트 입력</string>
+    <string name="health_http">서비스 응답 HTTP %1$d: %2$s</string>
+    <string name="health_fail">연결할 수 없음: %1$s</string>
+    <string name="err_pc_down">기본 서비스에 연결할 수 없음(%1$d회 시도): %2$s</string>
+    <string name="err_recent_fail">30초 안에 실패함</string>
+    <string name="err_both_down">기본·예비 서비스 모두 연결할 수 없음: %1$s</string>
+    <string name="err_no_server">음성 인식 서비스가 아직 설정되지 않았습니다(설정 → 음성 인식 서비스)</string>
+    <string name="mic_connecting">연결 중…</string>
+    <string name="mic_retry">PC 에 연결할 수 없음 (%1$s), %2$d초 후 재시도</string>
+    <string name="mic_stopped">중지됨</string>
+    <string name="mic_idle_title">PC가 이 시간 동안 쓰지 않으면 자동으로 끄기 (분)</string>
+    <string name="mic_idle_summary">PC가 판단: 이 시간 동안 휴대폰 마이크로 녹음하지 않으면 끕니다. 주변 소리와 무관. PC 미연결 중에도 계산. 0 = 끄지 않음</string>
+    <string name="mic_idle_stopped">PC 마이크: %1$d분 동안 쓰지 않아 자동으로 껐습니다</string>
+    <string name="mic_title_offline">휴대폰 마이크: PC에 연결할 수 없음</string>
+    <string name="mic_unreachable">PC 마이크가 PC에 연결할 수 없습니다: %1$s. 자동으로 다시 시도합니다</string>
+    <string name="mic_reconnected">PC 마이크 연결됨</string>
+    <string name="mic_err_timeout">연결 시간 초과. 휴대폰과 PC 사이의 네트워크를 확인하세요</string>
+    <string name="mic_err_refused">PC가 대기 중이 아닙니다. Shuohuaa 서비스가 실행 중인가요</string>
+    <string name="remote_confirm">입력란이 아닙니다. 한 번 더 누르면 휴대폰을 마이크로 PC에서 녹음 시작</string>
+    <string name="remote_started">PC에서 녹음 시작</string>
+    <string name="remote_stopped">PC 녹음 중지</string>
+    <string name="remote_notify_title">탭하면 PC 마이크를 켜고 PC에서 녹음 시작</string>
+    <string name="pc_recording_badge">● PC 녹음 중</string>
+    <string name="mic_title_pc_recording">휴대폰 마이크: PC가 녹음 중</string>
+    <string name="mic_bad_server">마이크 모드의 컴퓨터 주소가 없습니다</string>
+    <string name="mic_refused">PC 가 거부함: %1$s</string>
+    <string name="mic_connected">%1$s 연결됨</string>
+    <string name="mic_open_fail">마이크를 열 수 없습니다</string>
+    <string name="mic_channel">휴대폰을 PC 마이크로</string>
+    <string name="mic_title_muted">휴대폰 마이크: 음소거</string>
+    <string name="mic_title_paused">휴대폰 마이크: 음성 입력 중 일시 중지</string>
+    <string name="mic_title_live">휴대폰 마이크: PC 로 전송 중</string>
+    <string name="mic_unmute">음소거 해제</string>
+    <string name="mic_mute">음소거</string>
+    <string name="mic_stop">중지</string>
+    <string name="model_title">모델</string>
+    <string name="model_dialog">제공자의 기본 모델이 자동으로 채워집니다(변경 가능). Shuohuaa는 필요 없음(컴퓨터의 현재 모델 사용). 비우면 whisper-1</string>
+    <string name="err_bad_url">주소가 올바르지 않음: %1$s</string>
+    <string name="health_openai">연결됨</string>
+    <string name="health_auth">키가 올바르지 않음(HTTP %1$d)</string>
+    <string name="test_primary">기본: %1$s</string>
+    <string name="test_fallback">예비: %1$s</string>
+    <string name="mic_host_title">컴퓨터 주소</string>
+    <string name="mic_host_dialog">Shuohuaa가 실행 중인 컴퓨터(예: 100.x.y.z, ./shuohuaa status의 “휴대폰 마이크” 줄)</string>
+    <string name="mic_token_title">토큰(선택)</string>
+    <string name="mic_token_summary">그 컴퓨터 .env의 SHUOHUAA_API_TOKEN(설정 안 했으면 비워 두기)</string>
+    <string name="provider_title">서비스 제공자</string>
+    <string name="provider_shuohuaa">Shuohuaa(내 컴퓨터)</string>
+    <string name="provider_custom">기타(OpenAI 호환)</string>
+    <string name="stream_note">실시간 글자 표시는 말하는 동안 0.7초마다 녹음을 인식에 보냅니다. 요청당 과금되는 클라우드 서비스에서는 요청이 크게 늘어납니다</string>
+    <string name="tile_mic">PC 마이크</string>
+    <string name="hint_external_no_field">지금은 입력란이 아닙니다</string>
+    <string name="hint_external_need_switch">다른 키보드에서 전환하려면 설정에서 “빠른 전환”을 켜세요</string>
+    <string name="hint_external_old_android">키보드 전환은 Android 11 이상에서만 됩니다</string>
+    <string name="hint_external_switch_failed">전환할 수 없습니다: 먼저 시스템 설정에서 Wotingbudong 키보드를 사용 설정하세요</string>
+    <string name="tasker_plugin_label">Wotingbudong: 음성 입력</string>
+    <string name="tasker_pick_title">실행할 동작</string>
+    <string name="tasker_pick_title_caller">%1$s용: 실행할 동작</string>
+    <string name="tasker_toggle">전환(녹음 중이면 정지, 아니면 시작)</string>
+    <string name="tasker_start">시작</string>
+    <string name="tasker_stop">정지</string>
+    <string name="tasker_token_changed">이 Tasker 작업이 무효가 되었습니다. Tasker에서 다시 열어 주세요</string>
+    <string name="tab_start">시작하기</string>
+    <string name="tab_service">인식 서비스</string>
+    <string name="tab_voice">말하기와 글자</string>
+    <string name="tab_look">모양</string>
+    <string name="tab_mic">PC 마이크</string>
+    <string name="restore_defaults_title">이 페이지 기본값으로 되돌리기</string>
+    <string name="restore_defaults_summary">이 페이지만, 되돌리기 가능</string>
+    <string name="restore_confirm">이 페이지의 항목을 모두 기본값으로 되돌립니다. 몇 초 동안 되돌리기할 수 있습니다.</string>
+    <string name="restore_ok">되돌리기</string>
+    <string name="undo">실행 취소</string>
+    <string name="changed_one">변경됨: %1$s</string>
+    <string name="changed_many">%1$d개 항목 변경됨</string>
+    <string name="restored">이 페이지를 기본값으로 되돌렸습니다</string>
+    <string name="a11y_prompt_channel">빠른 전환 알림</string>
+    <string name="a11y_prompt_title">빠른 전환이 꺼져 있습니다</string>
+    <string name="a11y_prompt_text">탭해서 켜면 Tasker가 다른 키보드에서 전환할 수 있습니다</string>
+    <string-array name="orb_color_entries">
+        <item>시스템 따르기</item>
+        <item>파랑</item>
+        <item>초록</item>
+        <item>보라</item>
+        <item>주황</item>
+        <item>분홍</item>
+    </string-array>
+    <string-array name="stream_mode_entries">
+        <item>말하는 동안 표시 (확정 전 밑줄)</item>
+        <item>먼저 미리 보기, 탭하면 입력</item>
+        <item>끊을 때마다 표시</item>
+    </string-array>
+</resources>

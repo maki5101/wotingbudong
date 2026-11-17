@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory android:title="@string/cat_mic">
+        <SwitchPreferenceCompat android:key="mic_mode" android:title="@string/mic_mode_title"
+            android:summary="@string/mic_mode_summary" android:defaultValue="false" />
+        <SwitchPreferenceCompat android:key="mic_muted" android:title="@string/mic_muted_title"
+            android:summary="@string/mic_muted_summary" android:defaultValue="false" />
+        <SeekBarPreference android:key="mic_idle_min" android:title="@string/mic_idle_title"
+            android:summary="@string/mic_idle_summary" android:defaultValue="10" android:max="60" app:min="0"
+            app:showSeekBarValue="true" />
+        <!-- 麦克风模式自己的电脑地址和口令，和识别服务分开（识别服务可能是云服务） -->
+        <EditTextPreference android:key="mic_host" android:title="@string/mic_host_title"
+            android:dialogMessage="@string/mic_host_dialog" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference android:key="mic_token" android:title="@string/mic_token_title"
+            android:summary="@string/mic_token_summary" />
+        <EditTextPreference android:key="mic_port" android:title="@string/mic_port_title" android:defaultValue="9798"
+            android:dialogMessage="@string/mic_port_dialog" app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+</PreferenceScreen>

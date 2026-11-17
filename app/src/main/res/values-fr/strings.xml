@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 由 tools/gen_strings.py 生成：改文字改那里再生成，别手改。默认（values/）是英文 -->
+<resources>
+    <string name="app_name">Wotingbudong</string>
+    <string name="subtype_label">Saisie vocale Wotingbudong</string>
+    <string name="a11y_label">Wotingbudong · bascule rapide</string>
+    <string name="a11y_description">Quand un autre clavier s\'affiche, montre un petit micro au-dessus ; un toucher bascule le champ actuel vers la bulle vocale. Quand le plugin Tasker lance la reconnaissance, il sert aussi à vérifier si vous êtes dans un champ de saisie et à basculer le clavier ici. Il ne regarde que l\'apparition ou la disparition des fenêtres de clavier et si le focus est un champ de saisie — il ne lit pas le texte à l\'écran et n\'intercepte aucune touche.</string>
+    <string name="settings_title">Wotingbudong · Paramètres</string>
+    <string name="cat_enable">Mise en route</string>
+    <string name="enable_ime_title">Activer ce clavier dans le système</string>
+    <string name="enable_ime_summary">Ouvre les réglages des claviers ; activez « Wotingbudong »</string>
+    <string name="pick_ime_title">Passer à ce clavier</string>
+    <string name="mic_title">Autorisation du micro</string>
+    <string name="a11y_title">Bascule rapide (service d\'accessibilité)</string>
+    <string name="a11y_button_title">Bouton de bascule dans la barre de navigation</string>
+    <string name="a11y_button_summary">Service d\'accessibilité activé, attribuez le bouton d\'accessibilité du système à « Wotingbudong · bascule rapide » : un bouton apparaît dans la barre de navigation pour alterner avec votre clavier précédent. Touchez ici pour le configurer.</string>
+    <string name="bubble_title">Petit micro au-dessus des autres claviers</string>
+    <string name="bubble_summary">Nécessite le service d\'accessibilité. Désactivé par défaut ; le bouton de la barre de navigation est plus pratique</string>
+    <string name="cat_pc">Service de reconnaissance</string>
+    <string name="server_title">Adresse</string>
+    <string name="server_dialog">L\'URL d\'API du service, remplie automatiquement quand vous choisissez un fournisseur. Pour Shuohuaa, la ligne « API téléphone » de ./shuohuaa status sur l\'ordinateur, p. ex. http://100.x.y.z:9797</string>
+    <string name="token_title">Clé d\'API / jeton (facultatif)</string>
+    <string name="token_summary">La clé d\'API du fournisseur ; pour Shuohuaa, SHUOHUAA_API_TOKEN du .env de l\'ordinateur (vide si non défini)</string>
+    <string name="test_title">Tester la connexion</string>
+    <string name="test_summary">Vérifie que les services principal et de secours répondent et que les clés d\'API sont bonnes</string>
+    <string name="cat_mic">Téléphone comme micro de l\'ordinateur</string>
+    <string name="mic_mode_title">Mode micro</string>
+    <string name="mic_mode_summary">Envoie en continu le micro du téléphone à l\'ordinateur, où il peut servir de source audio (par ex. à distance). Reste connecté ; couper ou arrêter depuis la notification</string>
+    <string name="mic_muted_title">Muet</string>
+    <string name="mic_muted_summary">En sourdine, le micro est coupé et rien n\'est envoyé ; la connexion reste ouverte</string>
+    <string name="mic_port_title">Port du micro</string>
+    <string name="mic_port_dialog">PHONE_MIC_PORT sur l\'ordinateur</string>
+    <string name="cat_fallback">Service de secours (si le principal est injoignable, facultatif)</string>
+    <string name="fallback_title">Adresse</string>
+    <string name="fallback_dialog">Comme pour le service principal ; vide = pas de secours</string>
+    <string name="fallback_key_title">Clé d\'API / jeton</string>
+    <string name="fallback_model_title">Modèle</string>
+    <string name="hold_ms_title">Maintenir plus longtemps = appuyer pour parler (ms)</string>
+    <string name="silence_ms_title">Silence qui termine un segment (ms)</string>
+    <string name="rms_title">Seuil de détection de la voix (plus haut = moins sensible)</string>
+    <string name="max_seg_title">Durée maximale d\'un segment (s)</string>
+    <string name="max_seg_summary">Filet de sécurité pour un long discours sans pause : on coupe au moment calme le plus proche et on insère. Plus bas = retour plus rapide, plus de requêtes</string>
+    <string name="idle_stop_title">Arrêter l\'enregistrement après ce silence (s)</string>
+    <string name="idle_stop_summary">Au cas où vous oublieriez d\'arrêter. 0 = jusqu\'à ce que vous arrêtiez</string>
+    <string name="haptic_title">Vibrer au début/à l\'arrêt</string>
+    <string name="orb_color_title">Couleur de la bulle</string>
+    <string name="orb_size_title">Taille de la bulle (dp)</string>
+    <string name="orb_size_summary">Les petits boutons suivent</string>
+    <string name="orb_alpha_title">Opacité de la bulle (plus haut = plus opaque)</string>
+    <string name="edge_margin_title">Distance au bord de l\'écran une fois ancrée (dp)</string>
+    <string name="edge_margin_summary">Augmentez si vous déclenchez les gestes de bord ; la zone du geste retour fait environ 24</string>
+    <string name="auto_start_title">Enregistrer dès qu\'on passe à ce clavier</string>
+    <string name="auto_start_summary">Inutile de toucher la bulle</string>
+    <string name="hand_back_title">Revenir à votre clavier à la réouverture d\'un champ</string>
+    <string name="hand_back_summary">Si ce clavier est encore actif à l\'ouverture d\'un champ, revenir automatiquement à votre clavier habituel</string>
+    <string name="toast_grant_mic">Autorisez d\'abord le micro</string>
+    <string name="toast_connecting">Connexion…</string>
+    <string name="a11y_on">Activé : le bouton d\'accessibilité de la barre de navigation, le petit micro au-dessus des autres claviers et le plugin Tasker peuvent basculer ici. Basculez pour désactiver</string>
+    <string name="a11y_off">Désactivé. Basculer ouvre les réglages système — activez-y « Wotingbudong · Bascule rapide ». Sur Samsung, autorisez d\'abord les paramètres restreints dans Infos sur l\'appli</string>
+    <string name="mic_granted">Autorisé</string>
+    <string name="mic_denied">Non autorisé — touchez pour autoriser (nécessaire pour enregistrer)</string>
+    <string name="hint_no_mic">Pas d\'accès au micro, touchez l\'engrenage pour l\'autoriser</string>
+    <string name="hint_idle_stopped">Silence prolongé, arrêt</string>
+    <string name="hint_fallback_used">Service principal injoignable — cette phrase est passée par le secours</string>
+    <string name="hint_undo_mismatch">Le texte avant le curseur a changé, rien n\'a été supprimé</string>
+    <string name="hint_undone_continue">Annulé, continuez à parler</string>
+    <string name="hint_undone">Annulé</string>
+    <string name="hint_nothing_to_undo">Rien à annuler</string>
+    <string name="hint_switch_after">Retour au clavier après cette phrase</string>
+    <string name="key_send">Envoyer</string>
+    <string name="key_search">Rechercher</string>
+    <string name="key_go">Aller</string>
+    <string name="key_done">OK</string>
+    <string name="key_next">Suivant</string>
+    <string name="punct_comma">", "</string>
+    <string name="punct_period">". "</string>
+    <string name="punct_question">" ? "</string>
+    <string name="hint_field_unsuitable">Utilisez le clavier pour les mots de passe et les champs numériques</string>
+    <string name="cd_orb_start">Démarrer la saisie vocale</string>
+    <string name="cd_orb_stop">Arrêter l\'enregistrement</string>
+    <string name="cd_keyboard">Passer au clavier</string>
+    <string name="cd_undo">Annuler la dernière phrase</string>
+    <string name="cd_edit">Afficher ou masquer les touches d\'édition</string>
+    <string name="cd_settings">Paramètres</string>
+    <string name="cd_left">Curseur à gauche</string>
+    <string name="cd_right">Curseur à droite</string>
+    <string name="cd_delete">Supprimer</string>
+    <string name="cd_space">Espace</string>
+    <string name="cd_enter">Entrée</string>
+    <string name="stream_mode_title">Affichage du texte</string>
+    <string name="remove_fillers_title">Supprimer les hésitations</string>
+    <string name="remove_fillers_summary">Ne pas taper « euh », « uh », « um »… Un « mm-hm » voulu est aussi supprimé</string>
+    <string name="cd_preview_insert">Insérer le texte de l\'aperçu</string>
+    <string name="health_http">Le service a répondu HTTP %1$d : %2$s</string>
+    <string name="health_fail">Connexion impossible : %1$s</string>
+    <string name="err_pc_down">Service principal injoignable (%1$d tentatives) : %2$s</string>
+    <string name="err_recent_fail">échec il y a moins de 30 s</string>
+    <string name="err_both_down">Ni le service principal ni celui de secours ne répondent : %1$s</string>
+    <string name="err_no_server">Aucun service de reconnaissance défini (Réglages → Service de reconnaissance)</string>
+    <string name="mic_connecting">Connexion…</string>
+    <string name="mic_retry">Ordinateur injoignable (%1$s), nouvel essai dans %2$d s</string>
+    <string name="mic_stopped">Arrêté</string>
+    <string name="mic_idle_title">Couper si l\'ordinateur ne l\'utilise pas depuis (min)</string>
+    <string name="mic_idle_summary">L\'ordinateur décide : s\'il n\'a pas enregistré via le micro du téléphone depuis ce délai, le téléphone le coupe. Les bruits ambiants ne comptent pas. Compte aussi sans connexion. 0 = jamais</string>
+    <string name="mic_idle_stopped">Micro du PC : coupé après %1$d minutes sans utilisation</string>
+    <string name="mic_title_offline">Micro du téléphone : ordinateur injoignable</string>
+    <string name="mic_unreachable">Le micro du PC n\'atteint pas l\'ordinateur : %1$s. Nouvel essai automatique</string>
+    <string name="mic_reconnected">Micro du PC connecté</string>
+    <string name="mic_err_timeout">délai dépassé ; vérifiez le réseau entre le téléphone et l\'ordinateur</string>
+    <string name="mic_err_refused">l\'ordinateur n\'écoute pas ; le service Shuohuaa tourne-t-il ?</string>
+    <string name="remote_confirm">Pas dans un champ de texte. Appuyez encore pour enregistrer sur l\'ordinateur avec le téléphone comme micro</string>
+    <string name="remote_started">Enregistrement sur l\'ordinateur</string>
+    <string name="remote_stopped">Enregistrement sur l\'ordinateur arrêté</string>
+    <string name="remote_notify_title">Touchez pour activer le micro du PC et lancer l\'enregistrement</string>
+    <string name="pc_recording_badge">● L\'ordinateur enregistre</string>
+    <string name="mic_title_pc_recording">Micro du téléphone : l\'ordinateur enregistre</string>
+    <string name="mic_bad_server">Aucune adresse d\'ordinateur pour le mode micro</string>
+    <string name="mic_refused">Refusé par l\'ordinateur : %1$s</string>
+    <string name="mic_connected">Connecté à %1$s</string>
+    <string name="mic_open_fail">Impossible d\'ouvrir le micro</string>
+    <string name="mic_channel">Téléphone comme micro de l\'ordinateur</string>
+    <string name="mic_title_muted">Micro du téléphone : coupé</string>
+    <string name="mic_title_paused">Micro du téléphone : en pause pendant la saisie vocale</string>
+    <string name="mic_title_live">Micro du téléphone : envoi vers l\'ordinateur</string>
+    <string name="mic_unmute">Réactiver</string>
+    <string name="mic_mute">Couper</string>
+    <string name="mic_stop">Arrêter</string>
+    <string name="model_title">Modèle</string>
+    <string name="model_dialog">Rempli avec le modèle par défaut du fournisseur, modifiable. Inutile pour Shuohuaa (il utilise le modèle actuel de l\'ordinateur). Vide = whisper-1</string>
+    <string name="err_bad_url">L\'adresse n\'est pas valide : %1$s</string>
+    <string name="health_openai">Joignable</string>
+    <string name="health_auth">Clé d\'API incorrecte (HTTP %1$d)</string>
+    <string name="test_primary">Principal : %1$s</string>
+    <string name="test_fallback">Secours : %1$s</string>
+    <string name="mic_host_title">Adresse de l\'ordinateur</string>
+    <string name="mic_host_dialog">L\'ordinateur qui fait tourner Shuohuaa, p. ex. 100.x.y.z (ligne « Micro du téléphone » de ./shuohuaa status)</string>
+    <string name="mic_token_title">Jeton (facultatif)</string>
+    <string name="mic_token_summary">SHUOHUAA_API_TOKEN du .env de cet ordinateur ; vide si non défini</string>
+    <string name="provider_title">Fournisseur</string>
+    <string name="provider_shuohuaa">Shuohuaa (votre ordinateur)</string>
+    <string name="provider_custom">Autre (compatible OpenAI)</string>
+    <string name="stream_note">Le texte en direct envoie l\'enregistrement à la reconnaissance toutes les 0,7 s pendant que vous parlez — avec un service cloud facturé à la requête, cela fait beaucoup plus de requêtes</string>
+    <string name="tile_mic">Micro du PC</string>
+    <string name="hint_external_no_field">Pas dans un champ de saisie</string>
+    <string name="hint_external_need_switch">Activez la Bascule rapide dans les réglages pour passer ici depuis un autre clavier</string>
+    <string name="hint_external_old_android">Changer de clavier nécessite Android 11 ou plus récent</string>
+    <string name="hint_external_switch_failed">Impossible de changer : activez d\'abord le clavier Wotingbudong dans les réglages du système</string>
+    <string name="tasker_plugin_label">Wotingbudong : saisie vocale</string>
+    <string name="tasker_pick_title">Que faire</string>
+    <string name="tasker_pick_title_caller">Pour %1$s : que faire</string>
+    <string name="tasker_toggle">Basculer (arrêter si en cours, sinon démarrer)</string>
+    <string name="tasker_start">Démarrer</string>
+    <string name="tasker_stop">Arrêter</string>
+    <string name="tasker_token_changed">Cette action Tasker n\'est plus valide — rouvrez-la dans Tasker</string>
+    <string name="tab_start">Démarrer</string>
+    <string name="tab_service">Service</string>
+    <string name="tab_voice">Parole et texte</string>
+    <string name="tab_look">Apparence</string>
+    <string name="tab_mic">Micro du PC</string>
+    <string name="restore_defaults_title">Rétablir les valeurs par défaut de cette page</string>
+    <string name="restore_defaults_summary">Cette page seulement ; annulable</string>
+    <string name="restore_confirm">Tout ce qui est sur cette page revient à sa valeur par défaut. Vous pourrez annuler pendant quelques secondes.</string>
+    <string name="restore_ok">Rétablir</string>
+    <string name="undo">Annuler</string>
+    <string name="changed_one">Modifié : %1$s</string>
+    <string name="changed_many">%1$d réglages modifiés</string>
+    <string name="restored">Valeurs par défaut de cette page rétablies</string>
+    <string name="a11y_prompt_channel">Rappels de bascule rapide</string>
+    <string name="a11y_prompt_title">La bascule rapide est désactivée</string>
+    <string name="a11y_prompt_text">Touchez pour l\'activer afin que Tasker puisse basculer ici depuis un autre clavier</string>
+    <string-array name="orb_color_entries">
+        <item>Comme le système</item>
+        <item>Bleu</item>
+        <item>Vert</item>
+        <item>Violet</item>
+        <item>Orange</item>
+        <item>Rose</item>
+    </string-array>
+    <string-array name="stream_mode_entries">
+        <item>Pendant que vous parlez (souligné jusqu\'à validation)</item>
+        <item>Aperçu d\'abord, touchez pour insérer</item>
+        <item>Après chaque pause</item>
+    </string-array>
+</resources>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 由 tools/gen_strings.py 生成：改文字改那里再生成，别手改。默认（values/）是英文 -->
+<resources>
+    <string name="app_name">Wotingbudong</string>
+    <string name="subtype_label">Wotingbudong Spracheingabe</string>
+    <string name="a11y_label">Wotingbudong · Schnellwechsel</string>
+    <string name="a11y_description">Wenn eine andere Tastatur erscheint, zeigt es darüber ein kleines Mikrofon; ein Tippen wechselt das aktuelle Feld zur Sprach-Kugel. Startet das Tasker-Plugin die Erkennung, prüft es damit auch, ob du in einem Textfeld bist, und wechselt die Tastatur hierher. Es sieht nur, ob Tastaturfenster erscheinen oder verschwinden und ob der Fokus ein Textfeld ist – es liest keinen Text auf dem Bildschirm und fängt keine Tasten ab.</string>
+    <string name="settings_title">Wotingbudong · Einstellungen</string>
+    <string name="cat_enable">Einrichtung</string>
+    <string name="enable_ime_title">Diese Tastatur im System aktivieren</string>
+    <string name="enable_ime_summary">Öffnet die Tastatureinstellungen des Systems; „Wotingbudong“ einschalten</string>
+    <string name="pick_ime_title">Zu dieser Tastatur wechseln</string>
+    <string name="mic_title">Mikrofonberechtigung</string>
+    <string name="a11y_title">Schnellwechsel (Bedienungshilfe)</string>
+    <string name="a11y_button_title">Umschalttaste in der Navigationsleiste</string>
+    <string name="a11y_button_summary">Mit aktiver Bedienungshilfe die Bedienungshilfen-Taste des Systems auf „Wotingbudong · Schnellwechsel“ legen: In der Navigationsleiste erscheint eine Taste, die zwischen Wotingbudong und der vorigen Tastatur wechselt. Hier tippen zum Einrichten.</string>
+    <string name="bubble_title">Kleines Mikrofon über anderen Tastaturen</string>
+    <string name="bubble_summary">Braucht die Bedienungshilfe. Standardmäßig aus; die Taste in der Navigationsleiste ist praktischer</string>
+    <string name="cat_pc">Spracherkennungsdienst</string>
+    <string name="server_title">Adresse</string>
+    <string name="server_dialog">Die API-Adresse des Dienstes; wird bei Auswahl des Anbieters ausgefüllt. Für Shuohuaa die Zeile „Handy-API“ aus ./shuohuaa status am Computer, z. B. http://100.x.y.z:9797</string>
+    <string name="token_title">API-Schlüssel / Token (optional)</string>
+    <string name="token_summary">API-Schlüssel des Anbieters; bei Shuohuaa SHUOHUAA_API_TOKEN aus der .env des Computers (leer lassen, falls nicht gesetzt)</string>
+    <string name="test_title">Verbindung testen</string>
+    <string name="test_summary">Prüft, ob Haupt- und Ersatzdienst erreichbar sind und die API-Schlüssel stimmen</string>
+    <string name="cat_mic">Handy als Mikrofon des Rechners</string>
+    <string name="mic_mode_title">Mikrofonmodus</string>
+    <string name="mic_mode_summary">Überträgt das Handy-Mikrofon laufend an den Rechner, wo es als Audioquelle wählbar ist (z. B. bei Fernzugriff). Bleibt verbunden; stumm schalten oder beenden über die Benachrichtigung</string>
+    <string name="mic_muted_title">Stumm</string>
+    <string name="mic_muted_summary">Stumm: Mikrofon aus, nichts wird gesendet; die Verbindung bleibt</string>
+    <string name="mic_port_title">Mikrofon-Port</string>
+    <string name="mic_port_dialog">PHONE_MIC_PORT auf dem Computer</string>
+    <string name="cat_fallback">Ersatzdienst (wenn der Hauptdienst nicht erreichbar ist, optional)</string>
+    <string name="fallback_title">Adresse</string>
+    <string name="fallback_dialog">Wie beim Hauptdienst; leer = kein Ersatz</string>
+    <string name="fallback_key_title">API-Schlüssel / Token</string>
+    <string name="fallback_model_title">Modell</string>
+    <string name="hold_ms_title">Länger halten = Push-to-Talk (ms)</string>
+    <string name="silence_ms_title">Stille bis zum Segmentende (ms)</string>
+    <string name="rms_title">Sprach-Erkennungsschwelle (höher = unempfindlicher)</string>
+    <string name="max_seg_title">Maximale Segmentlänge (s)</string>
+    <string name="max_seg_summary">Sicherheitsnetz bei langer Rede ohne Pause: dann wird am nächsten leisen Moment geschnitten und eingefügt. Kleiner = schnellere Rückmeldung, mehr Anfragen</string>
+    <string name="idle_stop_title">Aufnahme nach so viel Stille beenden (s)</string>
+    <string name="idle_stop_summary">Falls du das Beenden vergisst. 0 = bis du selbst stoppst</string>
+    <string name="haptic_title">Beim Starten/Stoppen vibrieren</string>
+    <string name="orb_color_title">Farbe der Kugel</string>
+    <string name="orb_size_title">Größe der Kugel (dp)</string>
+    <string name="orb_size_summary">Die kleinen Tasten skalieren mit</string>
+    <string name="orb_alpha_title">Deckkraft der Kugel (höher = deckender)</string>
+    <string name="edge_margin_title">Abstand zum Bildschirmrand beim Andocken (dp)</string>
+    <string name="edge_margin_summary">Erhöhen, wenn du ständig Randgesten auslöst; der Zurück-Bereich ist etwa 24</string>
+    <string name="auto_start_title">Aufnahme beim Wechsel zu dieser Tastatur starten</string>
+    <string name="auto_start_summary">Kein Tippen auf die Kugel nötig</string>
+    <string name="hand_back_title">Beim erneuten Öffnen eines Felds zur eigenen Tastatur zurück</string>
+    <string name="hand_back_summary">Ist beim nächsten Textfeld noch diese Tastatur gewählt, wird automatisch zur gewohnten zurückgewechselt</string>
+    <string name="toast_grant_mic">Zuerst Mikrofonzugriff erlauben</string>
+    <string name="toast_connecting">Verbinde…</string>
+    <string name="a11y_on">An: Bedienungshilfen-Taste in der Navigationsleiste, kleines Mikrofon über anderen Tastaturen und das Tasker-Plugin können hierher wechseln. Zum Ausschalten umlegen</string>
+    <string name="a11y_off">Aus. Beim Umlegen öffnen sich die Systemeinstellungen – dort „Wotingbudong · Schnellwechsel“ einschalten. Samsung-Handys müssen zuerst in den App-Infos eingeschränkte Einstellungen erlauben</string>
+    <string name="mic_granted">Erlaubt</string>
+    <string name="mic_denied">Nicht erlaubt – tippen zum Erlauben (für Aufnahmen nötig)</string>
+    <string name="hint_no_mic">Keine Mikrofonberechtigung, Zahnrad antippen zum Erlauben</string>
+    <string name="hint_idle_stopped">Eine Weile Stille, Aufnahme beendet</string>
+    <string name="hint_fallback_used">Hauptdienst nicht erreichbar – dieser Satz lief über den Ersatzdienst</string>
+    <string name="hint_undo_mismatch">Text vor dem Cursor hat sich geändert, nichts gelöscht</string>
+    <string name="hint_undone_continue">Rückgängig gemacht, weitersprechen</string>
+    <string name="hint_undone">Rückgängig gemacht</string>
+    <string name="hint_nothing_to_undo">Nichts rückgängig zu machen</string>
+    <string name="hint_switch_after">Nach diesem Satz zurück zur Tastatur</string>
+    <string name="key_send">Senden</string>
+    <string name="key_search">Suchen</string>
+    <string name="key_go">Los</string>
+    <string name="key_done">Fertig</string>
+    <string name="key_next">Weiter</string>
+    <string name="punct_comma">", "</string>
+    <string name="punct_period">". "</string>
+    <string name="punct_question">"? "</string>
+    <string name="hint_field_unsuitable">Für Passwort- und Zahlenfelder die Tastatur verwenden</string>
+    <string name="cd_orb_start">Spracheingabe starten</string>
+    <string name="cd_orb_stop">Aufnahme beenden</string>
+    <string name="cd_keyboard">Zur Tastatur wechseln</string>
+    <string name="cd_undo">Letzten Satz rückgängig machen</string>
+    <string name="cd_edit">Bearbeitungstasten ein-/ausblenden</string>
+    <string name="cd_settings">Einstellungen</string>
+    <string name="cd_left">Cursor nach links</string>
+    <string name="cd_right">Cursor nach rechts</string>
+    <string name="cd_delete">Löschen</string>
+    <string name="cd_space">Leerzeichen</string>
+    <string name="cd_enter">Eingabe</string>
+    <string name="stream_mode_title">Wie Text erscheint</string>
+    <string name="remove_fillers_title">Füllwörter entfernen</string>
+    <string name="remove_fillers_summary">„äh“, „uh“, „um“ usw. nicht tippen. Auch ein gewolltes „mhm“ wird entfernt</string>
+    <string name="cd_preview_insert">Vorschautext einfügen</string>
+    <string name="health_http">Der Dienst antwortete HTTP %1$d: %2$s</string>
+    <string name="health_fail">Keine Verbindung: %1$s</string>
+    <string name="err_pc_down">Hauptdienst nicht erreichbar (%1$d Versuche): %2$s</string>
+    <string name="err_recent_fail">vor weniger als 30 s fehlgeschlagen</string>
+    <string name="err_both_down">Weder Haupt- noch Ersatzdienst erreichbar: %1$s</string>
+    <string name="err_no_server">Noch kein Spracherkennungsdienst eingestellt (Einstellungen → Spracherkennungsdienst)</string>
+    <string name="mic_connecting">Verbinde…</string>
+    <string name="mic_retry">Rechner nicht erreichbar (%1$s), neuer Versuch in %2$d s</string>
+    <string name="mic_stopped">Beendet</string>
+    <string name="mic_idle_title">Ausschalten, wenn der Computer es so lange nicht nutzt (Min.)</string>
+    <string name="mic_idle_summary">Der Computer entscheidet: Hat er so lange nicht über das Handymikrofon aufgenommen, schaltet das Handy es aus. Hintergrundgeräusche zählen nicht. Zählt auch ohne Verbindung. 0 = nie</string>
+    <string name="mic_idle_stopped">PC-Mikrofon: nach %1$d Minuten ohne Nutzung ausgeschaltet</string>
+    <string name="mic_title_offline">Handy-Mikrofon: Rechner nicht erreichbar</string>
+    <string name="mic_unreachable">PC-Mikrofon erreicht den Rechner nicht: %1$s. Versucht es automatisch erneut</string>
+    <string name="mic_reconnected">PC-Mikrofon verbunden</string>
+    <string name="mic_err_timeout">Zeitüberschreitung; Netzwerk zwischen Handy und Rechner prüfen</string>
+    <string name="mic_err_refused">der Rechner hört nicht zu; läuft der Shuohuaa-Dienst?</string>
+    <string name="remote_confirm">Kein Textfeld. Nochmal drücken: Aufnahme am Computer mit dem Handy als Mikrofon</string>
+    <string name="remote_started">Aufnahme am Computer gestartet</string>
+    <string name="remote_stopped">Aufnahme am Computer beendet</string>
+    <string name="remote_notify_title">Tippen: PC-Mikrofon einschalten und Aufnahme am Computer starten</string>
+    <string name="pc_recording_badge">● Computer nimmt auf</string>
+    <string name="mic_title_pc_recording">Handymikrofon: Computer nimmt auf</string>
+    <string name="mic_bad_server">Keine Computer-Adresse für den Mikrofonmodus eingestellt</string>
+    <string name="mic_refused">Vom Rechner abgelehnt: %1$s</string>
+    <string name="mic_connected">Verbunden mit %1$s</string>
+    <string name="mic_open_fail">Mikrofon lässt sich nicht öffnen</string>
+    <string name="mic_channel">Handy als Mikrofon des Rechners</string>
+    <string name="mic_title_muted">Handy-Mikrofon: stumm</string>
+    <string name="mic_title_paused">Handy-Mikrofon: pausiert während der Spracheingabe</string>
+    <string name="mic_title_live">Handy-Mikrofon: überträgt an den Rechner</string>
+    <string name="mic_unmute">Ton an</string>
+    <string name="mic_mute">Stumm</string>
+    <string name="mic_stop">Beenden</string>
+    <string name="model_title">Modell</string>
+    <string name="model_dialog">Wird mit dem Standardmodell des Anbieters ausgefüllt; änderbar. Bei Shuohuaa nicht nötig (nutzt das aktuelle Modell des Computers). Leer = whisper-1</string>
+    <string name="err_bad_url">Die Adresse ist ungültig: %1$s</string>
+    <string name="health_openai">Erreichbar</string>
+    <string name="health_auth">Falscher API-Schlüssel (HTTP %1$d)</string>
+    <string name="test_primary">Haupt: %1$s</string>
+    <string name="test_fallback">Ersatz: %1$s</string>
+    <string name="mic_host_title">Computer-Adresse</string>
+    <string name="mic_host_dialog">Der Computer, auf dem Shuohuaa läuft, z. B. 100.x.y.z (Zeile „Handy-Mikrofon“ in ./shuohuaa status)</string>
+    <string name="mic_token_title">Token (optional)</string>
+    <string name="mic_token_summary">SHUOHUAA_API_TOKEN aus der .env dieses Computers; leer lassen, falls nicht gesetzt</string>
+    <string name="provider_title">Anbieter</string>
+    <string name="provider_shuohuaa">Shuohuaa (eigener Computer)</string>
+    <string name="provider_custom">Andere (OpenAI-kompatibel)</string>
+    <string name="stream_note">Live-Text schickt beim Sprechen alle 0,7 s die Aufnahme zur Erkennung – bei Cloud-Diensten mit Abrechnung pro Anfrage sind das deutlich mehr Anfragen</string>
+    <string name="tile_mic">PC-Mikrofon</string>
+    <string name="hint_external_no_field">Gerade kein Textfeld</string>
+    <string name="hint_external_need_switch">Schalte in den Einstellungen den Schnellwechsel ein, um von einer anderen Tastatur hierher zu wechseln</string>
+    <string name="hint_external_old_android">Tastaturwechsel braucht Android 11 oder neuer</string>
+    <string name="hint_external_switch_failed">Wechsel nicht möglich: zuerst die Wotingbudong-Tastatur in den Systemeinstellungen aktivieren</string>
+    <string name="tasker_plugin_label">Wotingbudong: Spracheingabe</string>
+    <string name="tasker_pick_title">Was tun</string>
+    <string name="tasker_pick_title_caller">Für %1$s: was tun</string>
+    <string name="tasker_toggle">Umschalten (läuft → stoppen, sonst starten)</string>
+    <string name="tasker_start">Starten</string>
+    <string name="tasker_stop">Stoppen</string>
+    <string name="tasker_token_changed">Diese Tasker-Aktion ist ungültig – öffne sie in Tasker erneut</string>
+    <string name="tab_start">Erste Schritte</string>
+    <string name="tab_service">Dienst</string>
+    <string name="tab_voice">Sprechen &amp; Text</string>
+    <string name="tab_look">Aussehen</string>
+    <string name="tab_mic">PC-Mikrofon</string>
+    <string name="restore_defaults_title">Standardwerte dieser Seite wiederherstellen</string>
+    <string name="restore_defaults_summary">Nur diese Seite; rückgängig machbar</string>
+    <string name="restore_confirm">Alles auf dieser Seite wird auf den Standard zurückgesetzt. Ein paar Sekunden lang lässt es sich rückgängig machen.</string>
+    <string name="restore_ok">Zurücksetzen</string>
+    <string name="undo">Rückgängig</string>
+    <string name="changed_one">Geändert: %1$s</string>
+    <string name="changed_many">%1$d Einstellungen geändert</string>
+    <string name="restored">Standardwerte dieser Seite wiederhergestellt</string>
+    <string name="a11y_prompt_channel">Hinweise zum Schnellwechsel</string>
+    <string name="a11y_prompt_title">Schnellwechsel ist aus</string>
+    <string name="a11y_prompt_text">Tippen zum Einschalten, damit Tasker von einer anderen Tastatur hierher wechseln kann</string>
+    <string-array name="orb_color_entries">
+        <item>Wie System</item>
+        <item>Blau</item>
+        <item>Grün</item>
+        <item>Lila</item>
+        <item>Orange</item>
+        <item>Rosa</item>
+    </string-array>
+    <string-array name="stream_mode_entries">
+        <item>Beim Sprechen (unterstrichen bis fertig)</item>
+        <item>Erst Vorschau, Tippen fügt ein</item>
+        <item>Nach jeder Pause</item>
+    </string-array>
+</resources>

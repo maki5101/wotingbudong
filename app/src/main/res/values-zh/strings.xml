@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 由 tools/gen_strings.py 生成：改文字改那里再生成，别手改。默认（values/）是英文 -->
+<resources>
+    <string name="app_name">我听不懂</string>
+    <string name="subtype_label">我听不懂 语音输入</string>
+    <string name="a11y_label">我听不懂 · 快速切换</string>
+    <string name="a11y_description">在别的键盘弹出时，键盘上方显示一个小话筒；点一下当前输入框直接换成语音圆球。Tasker 插件开始识别时，也靠它判断你在不在输入框里、把输入法切过来。只看键盘窗口的出现和消失、当前焦点是不是输入框，不读屏幕上的文字、不拦截按键。</string>
+    <string name="settings_title">我听不懂 · 设置</string>
+    <string name="cat_enable">启用</string>
+    <string name="enable_ime_title">在系统里启用这个输入法</string>
+    <string name="enable_ime_summary">打开系统的“语言和输入法”设置，勾选“我听不懂”</string>
+    <string name="pick_ime_title">切换到这个输入法</string>
+    <string name="mic_title">麦克风权限</string>
+    <string name="a11y_title">快速切换（无障碍服务）</string>
+    <string name="a11y_button_title">导航栏上的切换按钮</string>
+    <string name="a11y_button_summary">开了无障碍服务后，去系统的“无障碍按钮”里把它指向“我听不懂 · 快速切换”，底部导航栏就会多一个按钮，点一下在我听不懂和上一个键盘之间来回切。点这里去设置。</string>
+    <string name="bubble_title">别的键盘上方显示小话筒</string>
+    <string name="bubble_summary">开无障碍服务后可用。默认关，导航栏按钮更顺手</string>
+    <string name="cat_pc">识别服务</string>
+    <string name="server_title">地址</string>
+    <string name="server_dialog">服务的接口地址，选了服务商会自动填上。说话啊填电脑上 ./shuohuaa status 里“手机接口”那行，如 http://100.x.y.z:9797</string>
+    <string name="token_title">密钥 / 口令（可选）</string>
+    <string name="token_summary">服务商给的 API Key；说话啊填电脑 .env 里的 SHUOHUAA_API_TOKEN，没设就留空</string>
+    <string name="test_title">测试连接</string>
+    <string name="test_summary">测一下主服务和备用连不连得上、API Key 对不对</string>
+    <string name="cat_mic">手机当电脑的麦克风</string>
+    <string name="mic_mode_title">麦克风模式</string>
+    <string name="mic_mode_summary">把手机麦克风的声音持续推给电脑，电脑那边可以选它当声音来源（远程用电脑时靠它说话）。连接常驻，通知栏可静音/停止</string>
+    <string name="mic_muted_title">静音</string>
+    <string name="mic_muted_summary">静音时麦克风关掉、不发声音，连接保持</string>
+    <string name="mic_port_title">麦克风端口</string>
+    <string name="mic_port_dialog">电脑那边的 PHONE_MIC_PORT</string>
+    <string name="cat_fallback">备用识别服务（主服务连不上时用，可选）</string>
+    <string name="fallback_title">地址</string>
+    <string name="fallback_dialog">和主服务一样填；留空 = 不用备用</string>
+    <string name="fallback_key_title">密钥 / 口令</string>
+    <string name="fallback_model_title">模型</string>
+    <string name="hold_ms_title">按住多久算“按住说话”（毫秒）</string>
+    <string name="silence_ms_title">静音多久切一段（毫秒）</string>
+    <string name="rms_title">说话判定音量（越大越不灵敏）</string>
+    <string name="max_seg_title">一段最长几秒</string>
+    <string name="max_seg_summary">一口气说太久的兜底，到了就在最近的音量低谷切一段上屏。调小反馈快、请求多</string>
+    <string name="idle_stop_title">多久没人说话就自动停止录音（秒）</string>
+    <string name="idle_stop_summary">忘了关录音的兜底。0 = 一直录到你自己停</string>
+    <string name="haptic_title">开始/停止震动一下</string>
+    <string name="orb_color_title">圆球颜色</string>
+    <string name="orb_size_title">圆球大小（dp）</string>
+    <string name="orb_size_summary">三个小按钮跟着一起缩放</string>
+    <string name="orb_alpha_title">圆球透明度（越大越不透明）</string>
+    <string name="edge_margin_title">贴边时离屏幕边多远（dp）</string>
+    <string name="edge_margin_summary">老是误触系统的边缘手势就调大，返回手势区大约 24</string>
+    <string name="auto_start_title">切到这个输入法就开始录音</string>
+    <string name="auto_start_summary">不用再点圆球</string>
+    <string name="hand_back_title">重开输入框时交回原键盘</string>
+    <string name="hand_back_summary">用完语音退出后，下次点开输入框如果还停在这里，就自动切回你平时的键盘</string>
+    <string name="toast_grant_mic">先授权麦克风</string>
+    <string name="toast_connecting">连接中…</string>
+    <string name="a11y_on">已开启：导航栏的无障碍按钮、别的键盘上方的小话筒、Tasker 插件都能把输入法切过来。拨掉就关</string>
+    <string name="a11y_off">未开启。拨开会跳到系统设置，在那里打开“我听不懂 · 快速切换”。三星手机第一次要先在“应用信息”里允许受限设置</string>
+    <string name="mic_granted">已授权</string>
+    <string name="mic_denied">未授权，点这里授权（不授权没法录音）</string>
+    <string name="hint_no_mic">没有麦克风权限，点齿轮去授权</string>
+    <string name="hint_idle_stopped">一直没人说话，自动停了</string>
+    <string name="hint_fallback_used">主服务连不上，这句走的备用</string>
+    <string name="hint_undo_mismatch">光标前已经不是那句了，没删</string>
+    <string name="hint_undone_continue">已撤销，接着说</string>
+    <string name="hint_undone">已撤销</string>
+    <string name="hint_nothing_to_undo">没有可撤销的</string>
+    <string name="hint_switch_after">打完这句就切回键盘</string>
+    <string name="key_send">发送</string>
+    <string name="key_search">搜索</string>
+    <string name="key_go">前往</string>
+    <string name="key_done">完成</string>
+    <string name="key_next">下一项</string>
+    <string name="punct_comma">", "</string>
+    <string name="punct_period">". "</string>
+    <string name="punct_question">"? "</string>
+    <string name="hint_field_unsuitable">密码和数字框请用键盘输入</string>
+    <string name="cd_orb_start">开始语音输入</string>
+    <string name="cd_orb_stop">停止录音</string>
+    <string name="cd_keyboard">切换到键盘</string>
+    <string name="cd_undo">撤销上一句</string>
+    <string name="cd_edit">显示或隐藏编辑键</string>
+    <string name="cd_settings">设置</string>
+    <string name="cd_left">光标左移</string>
+    <string name="cd_right">光标右移</string>
+    <string name="cd_delete">删除</string>
+    <string name="cd_space">空格</string>
+    <string name="cd_enter">回车</string>
+    <string name="stream_mode_title">出字方式</string>
+    <string name="remove_fillers_title">去掉语气词</string>
+    <string name="remove_fillers_summary">呃、嗯、uh、um 这类不打出来。注意「嗯，好的」里的嗯也会被去掉</string>
+    <string name="cd_preview_insert">插入预览的文字</string>
+    <string name="health_http">服务回了 HTTP %1$d：%2$s</string>
+    <string name="health_fail">连不上：%1$s</string>
+    <string name="err_pc_down">主服务连不上（重试 %1$d 次）：%2$s</string>
+    <string name="err_recent_fail">30 秒内刚失败过</string>
+    <string name="err_both_down">主服务和备用都连不上：%1$s</string>
+    <string name="err_no_server">还没设识别服务地址（设置 → 识别服务）</string>
+    <string name="mic_connecting">连接中…</string>
+    <string name="mic_retry">连不上电脑（%1$s），%2$d 秒后重试</string>
+    <string name="mic_stopped">已停止</string>
+    <string name="mic_idle_title">电脑多久没用就自动关（分钟）</string>
+    <string name="mic_idle_summary">电脑判断：它这么久没拿手机话筒录音就让手机关掉，不受周围声音影响。连不上电脑也计时。0 = 不自动关</string>
+    <string name="mic_idle_stopped">电脑麦克风：%1$d 分钟没用，已自动关闭</string>
+    <string name="mic_title_offline">手机麦克风：连不上电脑</string>
+    <string name="mic_unreachable">电脑麦克风连不上电脑：%1$s。会自动重试</string>
+    <string name="mic_reconnected">电脑麦克风已连上</string>
+    <string name="mic_err_timeout">连接超时，检查手机和电脑之间的网络通不通</string>
+    <string name="mic_err_refused">电脑没在听，说话啊服务开着吗</string>
+    <string name="remote_confirm">不在输入框里。再按一次：电脑用手机当话筒开始录音</string>
+    <string name="remote_started">电脑开始录音</string>
+    <string name="remote_stopped">电脑停止录音</string>
+    <string name="remote_notify_title">点一下：打开电脑麦克风，让电脑开始录音</string>
+    <string name="pc_recording_badge">● 电脑录音中</string>
+    <string name="mic_title_pc_recording">手机麦克风：电脑正在录音</string>
+    <string name="mic_bad_server">还没填麦克风模式的电脑地址</string>
+    <string name="mic_refused">电脑拒绝：%1$s</string>
+    <string name="mic_connected">已连上 %1$s</string>
+    <string name="mic_open_fail">麦克风打不开</string>
+    <string name="mic_channel">手机当电脑的麦克风</string>
+    <string name="mic_title_muted">手机麦克风：已静音</string>
+    <string name="mic_title_paused">手机麦克风：语音输入中，暂停传声</string>
+    <string name="mic_title_live">手机麦克风：正在向电脑传声音</string>
+    <string name="mic_unmute">取消静音</string>
+    <string name="mic_mute">静音</string>
+    <string name="mic_stop">停止</string>
+    <string name="model_title">模型</string>
+    <string name="model_dialog">选了服务商会自动填上默认模型，可以改。说话啊不用填（用电脑上当前的模型）。留空 = whisper-1</string>
+    <string name="err_bad_url">地址写得不对：%1$s</string>
+    <string name="health_openai">连得上</string>
+    <string name="health_auth">密钥不对（HTTP %1$d）</string>
+    <string name="test_primary">主服务：%1$s</string>
+    <string name="test_fallback">备用：%1$s</string>
+    <string name="mic_host_title">电脑地址</string>
+    <string name="mic_host_dialog">跑着说话啊的那台电脑，如 100.x.y.z（./shuohuaa status 里“手机麦克风”那行）</string>
+    <string name="mic_token_title">口令（可选）</string>
+    <string name="mic_token_summary">那台电脑 .env 里的 SHUOHUAA_API_TOKEN，没设就留空</string>
+    <string name="provider_title">服务商</string>
+    <string name="provider_shuohuaa">说话啊（自己电脑）</string>
+    <string name="provider_custom">其他（OpenAI 兼容）</string>
+    <string name="stream_note">边说边出字是说话时每 0.7 秒把录音发一次识别：用按次收费的云服务时请求会多出很多</string>
+    <string name="tile_mic">电脑麦克风</string>
+    <string name="hint_external_no_field">现在不在输入框里</string>
+    <string name="hint_external_need_switch">先在设置里打开“快速切换”，才能从别的键盘切过来</string>
+    <string name="hint_external_old_android">这个安卓版本切不了输入法（要 Android 11 以上）</string>
+    <string name="hint_external_switch_failed">切不过来：先在系统里启用“我听不懂”输入法</string>
+    <string name="tasker_plugin_label">我听不懂：语音识别</string>
+    <string name="tasker_pick_title">执行时做什么</string>
+    <string name="tasker_pick_title_caller">%1$s 要用：执行时做什么</string>
+    <string name="tasker_toggle">切换（开着就停、停着就开）</string>
+    <string name="tasker_start">开始</string>
+    <string name="tasker_stop">停止</string>
+    <string name="tasker_token_changed">这个 Tasker 动作失效了，在 Tasker 里重新点一下它</string>
+    <string name="tab_start">开始使用</string>
+    <string name="tab_service">识别服务</string>
+    <string name="tab_voice">说话与出字</string>
+    <string name="tab_look">外观</string>
+    <string name="tab_mic">电脑麦克风</string>
+    <string name="restore_defaults_title">恢复本页默认设置</string>
+    <string name="restore_defaults_summary">只动这一页，恢复后可以撤销</string>
+    <string name="restore_confirm">这一页的选项都回到默认值。之后几秒内可以撤销。</string>
+    <string name="restore_ok">恢复</string>
+    <string name="undo">撤销</string>
+    <string name="changed_one">已修改：%1$s</string>
+    <string name="changed_many">已修改 %1$d 项</string>
+    <string name="restored">已恢复本页默认设置</string>
+    <string name="a11y_prompt_channel">快速切换提醒</string>
+    <string name="a11y_prompt_title">快速切换没开</string>
+    <string name="a11y_prompt_text">点这里打开，Tasker 才能从别的键盘切过来</string>
+    <string-array name="orb_color_entries">
+        <item>跟随系统</item>
+        <item>蓝</item>
+        <item>绿</item>
+        <item>紫</item>
+        <item>橙</item>
+        <item>粉</item>
+    </string-array>
+    <string-array name="stream_mode_entries">
+        <item>边说边出字（带下划线，说完定下）</item>
+        <item>先预览，点一下才上屏</item>
+        <item>说完一段才出字</item>
+    </string-array>
+</resources>

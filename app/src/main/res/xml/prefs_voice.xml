@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory android:title="@string/tab_voice">
+        <ListPreference android:key="stream_mode" android:title="@string/stream_mode_title"
+            android:entries="@array/stream_mode_entries" android:entryValues="@array/stream_mode_values"
+            android:defaultValue="live" app:useSimpleSummaryProvider="true" />
+        <Preference android:key="stream_note" android:summary="@string/stream_note" android:selectable="false" />
+        <SwitchPreferenceCompat android:key="remove_fillers" android:title="@string/remove_fillers_title"
+            android:summary="@string/remove_fillers_summary" android:defaultValue="false" />
+        <SeekBarPreference android:key="hold_ms" android:title="@string/hold_ms_title"
+            android:defaultValue="300" android:max="800" app:min="100" app:showSeekBarValue="true" />
+        <SeekBarPreference android:key="silence_ms" android:title="@string/silence_ms_title"
+            android:defaultValue="300" android:max="1500" app:min="150" app:showSeekBarValue="true" />
+        <SeekBarPreference android:key="rms_threshold" android:title="@string/rms_title"
+            android:defaultValue="12" android:max="60" app:min="3" app:showSeekBarValue="true" />
+        <SeekBarPreference android:key="max_segment_s" android:title="@string/max_seg_title"
+            android:summary="@string/max_seg_summary" android:defaultValue="8" android:max="20" app:min="3" app:showSeekBarValue="true" />
+        <SeekBarPreference android:key="idle_stop_s" android:title="@string/idle_stop_title"
+            android:summary="@string/idle_stop_summary" android:defaultValue="15" android:max="300" app:min="0" app:showSeekBarValue="true" />
+        <SwitchPreferenceCompat android:key="auto_start" android:title="@string/auto_start_title" android:summary="@string/auto_start_summary" android:defaultValue="true" />
+        <SwitchPreferenceCompat android:key="hand_back" android:title="@string/hand_back_title"
+            android:summary="@string/hand_back_summary" android:defaultValue="true" />
+        <SwitchPreferenceCompat android:key="haptic" android:title="@string/haptic_title" android:defaultValue="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory>
+        <Preference android:key="restore_defaults" android:title="@string/restore_defaults_title"
+            android:summary="@string/restore_defaults_summary" />
+    </PreferenceCategory>
+</PreferenceScreen>

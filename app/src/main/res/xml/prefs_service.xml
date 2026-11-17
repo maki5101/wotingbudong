@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- 主服务、备用都是 OpenAI 兼容接口：服务商 + 地址 + API Key + 模型（Providers、Transcriber） -->
+    <PreferenceCategory android:title="@string/cat_pc">
+        <ListPreference android:key="provider" android:title="@string/provider_title"
+            android:defaultValue="shuohuaa" app:useSimpleSummaryProvider="true"
+            android:entries="@array/provider_entries" android:entryValues="@array/provider_values" />
+        <EditTextPreference android:key="server" android:title="@string/server_title"
+            android:defaultValue=""
+            android:dialogMessage="@string/server_dialog" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference android:key="token" android:title="@string/token_title"
+            android:summary="@string/token_summary" />
+        <EditTextPreference android:key="model" android:title="@string/model_title"
+            android:dialogMessage="@string/model_dialog" app:useSimpleSummaryProvider="true" />
+        <Preference android:key="test" android:title="@string/test_title" android:summary="@string/test_summary" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/cat_fallback">
+        <ListPreference android:key="fallback_provider" android:title="@string/provider_title"
+            android:defaultValue="custom" app:useSimpleSummaryProvider="true"
+            android:entries="@array/provider_entries" android:entryValues="@array/provider_values" />
+        <EditTextPreference android:key="fallback" android:title="@string/fallback_title"
+            android:dialogMessage="@string/fallback_dialog" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference android:key="fallback_key" android:title="@string/fallback_key_title" />
+        <EditTextPreference android:key="fallback_model" android:title="@string/fallback_model_title"
+            android:dialogMessage="@string/model_dialog" app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+</PreferenceScreen>

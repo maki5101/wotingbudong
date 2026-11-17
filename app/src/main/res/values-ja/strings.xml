@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 由 tools/gen_strings.py 生成：改文字改那里再生成，别手改。默认（values/）是英文 -->
+<resources>
+    <string name="app_name">Wotingbudong</string>
+    <string name="subtype_label">Wotingbudong 音声入力</string>
+    <string name="a11y_label">Wotingbudong · クイック切り替え</string>
+    <string name="a11y_description">ほかのキーボードが出たとき、その上に小さなマイクを表示し、タップで今の入力欄を音声の丸に切り替えます。Tasker プラグインで認識を始めるときも、入力欄にいるかの判定とキーボードの切り替えに使います。見るのはキーボードの表示・非表示と、フォーカスが入力欄かどうかだけ。画面の文字は読まず、キー入力も横取りしません。</string>
+    <string name="settings_title">Wotingbudong · 設定</string>
+    <string name="cat_enable">セットアップ</string>
+    <string name="enable_ime_title">このキーボードをシステムで有効にする</string>
+    <string name="enable_ime_summary">システムのキーボード設定を開きます。「Wotingbudong」をオンにしてください</string>
+    <string name="pick_ime_title">このキーボードに切り替える</string>
+    <string name="mic_title">マイクの権限</string>
+    <string name="a11y_title">クイック切り替え（ユーザー補助サービス）</string>
+    <string name="a11y_button_title">ナビゲーションバーの切り替えボタン</string>
+    <string name="a11y_button_summary">ユーザー補助サービスをオンにしたら、システムのユーザー補助ボタンを「Wotingbudong · クイック切り替え」に割り当てると、ナビゲーションバーのボタンで前のキーボードと行き来できます。ここをタップして設定します。</string>
+    <string name="bubble_title">他のキーボードの上に小さなマイクを表示</string>
+    <string name="bubble_summary">ユーザー補助サービスが必要。既定はオフ（ナビゲーションバーのボタンの方が便利）</string>
+    <string name="cat_pc">音声認識サービス</string>
+    <string name="server_title">URL</string>
+    <string name="server_dialog">サービスの API の URL。提供元を選ぶと自動で入ります。Shuohuaa はパソコンの ./shuohuaa status の「スマホ用 API」の行（例: http://100.x.y.z:9797）</string>
+    <string name="token_title">API キー / トークン（任意）</string>
+    <string name="token_summary">提供元の API キー。Shuohuaa はパソコンの .env の SHUOHUAA_API_TOKEN（未設定なら空欄）</string>
+    <string name="test_title">接続テスト</string>
+    <string name="test_summary">メインと予備につながるか、API キーが正しいかを確認</string>
+    <string name="cat_mic">スマホを PC のマイクに</string>
+    <string name="mic_mode_title">マイクモード</string>
+    <string name="mic_mode_summary">スマホのマイク音声を PC に送り続け、PC 側で音声入力元として選べます（リモート操作時など）。接続は維持され、通知からミュート/停止できます</string>
+    <string name="mic_muted_title">ミュート</string>
+    <string name="mic_muted_summary">ミュート中はマイクをオフにして何も送りません。接続は維持します</string>
+    <string name="mic_port_title">マイクのポート</string>
+    <string name="mic_port_dialog">パソコン側の PHONE_MIC_PORT</string>
+    <string name="cat_fallback">予備のサービス（メインにつながらないとき、任意）</string>
+    <string name="fallback_title">URL</string>
+    <string name="fallback_dialog">メインと同じ形式で。空欄 = 予備なし</string>
+    <string name="fallback_key_title">API キー / トークン</string>
+    <string name="fallback_model_title">モデル</string>
+    <string name="hold_ms_title">これより長押しで押している間だけ録音（ミリ秒）</string>
+    <string name="silence_ms_title">区切りとみなす無音（ミリ秒）</string>
+    <string name="rms_title">発話判定の音量（大きいほど鈍感）</string>
+    <string name="max_seg_title">1区切りの最大長（秒）</string>
+    <string name="max_seg_summary">息継ぎなしで長く話したときの保険。上限で直近の静かな瞬間に区切って入力します。小さいほど反応が早く、リクエストが増えます</string>
+    <string name="idle_stop_title">この時間話さなければ録音を停止（秒）</string>
+    <string name="idle_stop_summary">止め忘れ対策。0 = 自分で止めるまで録音</string>
+    <string name="haptic_title">開始/停止時に振動</string>
+    <string name="orb_color_title">オーブの色</string>
+    <string name="orb_size_title">オーブの大きさ（dp）</string>
+    <string name="orb_size_summary">小さなボタンも一緒に拡大縮小します</string>
+    <string name="orb_alpha_title">オーブの不透明度（大きいほど不透明）</string>
+    <string name="edge_margin_title">端に寄せたときの画面端からの距離（dp）</string>
+    <string name="edge_margin_summary">端のジェスチャーを誤操作するなら大きく（戻るジェスチャー領域は約 24）</string>
+    <string name="auto_start_title">このキーボードに切り替えたら録音開始</string>
+    <string name="auto_start_summary">オーブをタップする必要はありません</string>
+    <string name="hand_back_title">入力欄を開き直したら元のキーボードに戻す</string>
+    <string name="hand_back_summary">次に入力欄を開いたときまだこのキーボードなら、いつものキーボードに自動で戻します</string>
+    <string name="toast_grant_mic">先にマイクを許可してください</string>
+    <string name="toast_connecting">接続中…</string>
+    <string name="a11y_on">オン：ナビゲーションバーのユーザー補助ボタン、ほかのキーボード上の小さなマイク、Tasker プラグインから切り替えられます。スイッチでオフ</string>
+    <string name="a11y_off">オフ。スイッチを入れるとシステム設定が開くので「Wotingbudong · クイック切り替え」をオンに。Samsung は最初に「アプリ情報」で制限付き設定を許可してください</string>
+    <string name="mic_granted">許可済み</string>
+    <string name="mic_denied">未許可。タップして許可（録音に必要）</string>
+    <string name="hint_no_mic">マイクの権限がありません。歯車をタップして許可してください</string>
+    <string name="hint_idle_stopped">しばらく話がなかったので停止しました</string>
+    <string name="hint_fallback_used">メインにつながらないため、この文は予備を使いました</string>
+    <string name="hint_undo_mismatch">カーソル前の文が変わっているため削除しませんでした</string>
+    <string name="hint_undone_continue">取り消しました。続けて話してください</string>
+    <string name="hint_undone">取り消しました</string>
+    <string name="hint_nothing_to_undo">取り消すものがありません</string>
+    <string name="hint_switch_after">この文を入力したらキーボードに戻ります</string>
+    <string name="key_send">送信</string>
+    <string name="key_search">検索</string>
+    <string name="key_go">移動</string>
+    <string name="key_done">完了</string>
+    <string name="key_next">次へ</string>
+    <string name="punct_comma">", "</string>
+    <string name="punct_period">". "</string>
+    <string name="punct_question">"? "</string>
+    <string name="hint_field_unsuitable">パスワードや数字の欄はキーボードで入力してください</string>
+    <string name="cd_orb_start">音声入力を開始</string>
+    <string name="cd_orb_stop">録音を停止</string>
+    <string name="cd_keyboard">キーボードに切り替え</string>
+    <string name="cd_undo">直前の文を取り消す</string>
+    <string name="cd_edit">編集キーの表示/非表示</string>
+    <string name="cd_settings">設定</string>
+    <string name="cd_left">カーソルを左へ</string>
+    <string name="cd_right">カーソルを右へ</string>
+    <string name="cd_delete">削除</string>
+    <string name="cd_space">スペース</string>
+    <string name="cd_enter">改行</string>
+    <string name="stream_mode_title">文字の出方</string>
+    <string name="remove_fillers_title">フィラーを除く</string>
+    <string name="remove_fillers_summary">「えー」「uh」「um」などを入力しません。意味のある相づちも消えます</string>
+    <string name="cd_preview_insert">プレビューの文字を入力</string>
+    <string name="health_http">サービスの応答は HTTP %1$d：%2$s</string>
+    <string name="health_fail">接続できません：%1$s</string>
+    <string name="err_pc_down">メインのサービスにつながりません（%1$d 回試行）：%2$s</string>
+    <string name="err_recent_fail">30 秒以内に失敗したばかり</string>
+    <string name="err_both_down">メインにも予備にもつながりません：%1$s</string>
+    <string name="err_no_server">音声認識サービスが未設定です（設定 → 音声認識サービス）</string>
+    <string name="mic_connecting">接続中…</string>
+    <string name="mic_retry">PC に接続できません（%1$s）。%2$d 秒後に再試行</string>
+    <string name="mic_stopped">停止しました</string>
+    <string name="mic_idle_title">PCが使わないまま経過したら自動オフ（分）</string>
+    <string name="mic_idle_summary">PCが判断：この時間スマホのマイクで録音していなければオフにします。周りの音は関係ありません。PC未接続の間も数えます。0 = 自動オフしない</string>
+    <string name="mic_idle_stopped">PCマイク：%1$d 分間使われなかったため自動でオフにしました</string>
+    <string name="mic_title_offline">スマホのマイク：PCに接続できません</string>
+    <string name="mic_unreachable">PCマイクがPCに接続できません：%1$s。自動で再試行します</string>
+    <string name="mic_reconnected">PCマイクが接続されました</string>
+    <string name="mic_err_timeout">接続がタイムアウト。スマホとPCの間のネットワークを確認してください</string>
+    <string name="mic_err_refused">PCが待ち受けていません。Shuohuaaサービスは起動していますか</string>
+    <string name="remote_confirm">入力欄にいません。もう一度押すと、スマホをマイクにしてPCで録音を開始</string>
+    <string name="remote_started">PCで録音を開始</string>
+    <string name="remote_stopped">PCの録音を停止</string>
+    <string name="remote_notify_title">タップでPCマイクをオンにしてPCで録音を開始</string>
+    <string name="pc_recording_badge">● PCで録音中</string>
+    <string name="mic_title_pc_recording">スマホのマイク：PCが録音中</string>
+    <string name="mic_bad_server">マイクモードのパソコンのアドレスが未入力です</string>
+    <string name="mic_refused">PC に拒否されました：%1$s</string>
+    <string name="mic_connected">%1$s に接続中</string>
+    <string name="mic_open_fail">マイクを開けません</string>
+    <string name="mic_channel">スマホを PC のマイクに</string>
+    <string name="mic_title_muted">スマホのマイク：ミュート中</string>
+    <string name="mic_title_paused">スマホのマイク：音声入力中のため一時停止</string>
+    <string name="mic_title_live">スマホのマイク：PC に送信中</string>
+    <string name="mic_unmute">ミュート解除</string>
+    <string name="mic_mute">ミュート</string>
+    <string name="mic_stop">停止</string>
+    <string name="model_title">モデル</string>
+    <string name="model_dialog">提供元の既定モデルが自動で入ります（変更可）。Shuohuaa は不要（パソコンの現在のモデルを使用）。空欄 = whisper-1</string>
+    <string name="err_bad_url">URL が正しくありません：%1$s</string>
+    <string name="health_openai">接続できます</string>
+    <string name="health_auth">キーが正しくありません（HTTP %1$d）</string>
+    <string name="test_primary">メイン：%1$s</string>
+    <string name="test_fallback">予備：%1$s</string>
+    <string name="mic_host_title">パソコンのアドレス</string>
+    <string name="mic_host_dialog">Shuohuaa を動かしているパソコン（例: 100.x.y.z、./shuohuaa status の「スマホのマイク」の行）</string>
+    <string name="mic_token_title">トークン（任意）</string>
+    <string name="mic_token_summary">そのパソコンの .env の SHUOHUAA_API_TOKEN（未設定なら空欄）</string>
+    <string name="provider_title">サービス提供元</string>
+    <string name="provider_shuohuaa">Shuohuaa（自分のパソコン）</string>
+    <string name="provider_custom">その他（OpenAI 互換）</string>
+    <string name="stream_note">話しながらの表示は、話している間 0.7 秒ごとに録音を認識に送ります。従量課金のクラウドサービスではリクエストがかなり増えます</string>
+    <string name="tile_mic">PC のマイク</string>
+    <string name="hint_external_no_field">いまは入力欄にいません</string>
+    <string name="hint_external_need_switch">ほかのキーボードから切り替えるには、設定で「クイック切り替え」をオンに</string>
+    <string name="hint_external_old_android">キーボードの切り替えには Android 11 以降が必要です</string>
+    <string name="hint_external_switch_failed">切り替えられません：先にシステム設定で Wotingbudong キーボードを有効にしてください</string>
+    <string name="tasker_plugin_label">Wotingbudong：音声入力</string>
+    <string name="tasker_pick_title">実行時の動作</string>
+    <string name="tasker_pick_title_caller">%1$s 用：実行時の動作</string>
+    <string name="tasker_toggle">切り替え（録音中なら停止、止まっていれば開始）</string>
+    <string name="tasker_start">開始</string>
+    <string name="tasker_stop">停止</string>
+    <string name="tasker_token_changed">この Tasker アクションは無効になりました。Tasker で開き直してください</string>
+    <string name="tab_start">はじめに</string>
+    <string name="tab_service">認識サービス</string>
+    <string name="tab_voice">話し方と表示</string>
+    <string name="tab_look">外観</string>
+    <string name="tab_mic">PC のマイク</string>
+    <string name="restore_defaults_title">このページを既定に戻す</string>
+    <string name="restore_defaults_summary">このページだけ。あとで元に戻せます</string>
+    <string name="restore_confirm">このページの項目をすべて既定値に戻します。数秒間は元に戻せます。</string>
+    <string name="restore_ok">戻す</string>
+    <string name="undo">元に戻す</string>
+    <string name="changed_one">変更しました：%1$s</string>
+    <string name="changed_many">%1$d 項目を変更しました</string>
+    <string name="restored">このページを既定に戻しました</string>
+    <string name="a11y_prompt_channel">クイック切り替えのお知らせ</string>
+    <string name="a11y_prompt_title">クイック切り替えがオフです</string>
+    <string name="a11y_prompt_text">タップしてオンに。Tasker からほかのキーボードを切り替えられるようになります</string>
+    <string-array name="orb_color_entries">
+        <item>システムに合わせる</item>
+        <item>青</item>
+        <item>緑</item>
+        <item>紫</item>
+        <item>オレンジ</item>
+        <item>ピンク</item>
+    </string-array>
+    <string-array name="stream_mode_entries">
+        <item>話しながら表示（確定まで下線）</item>
+        <item>まずプレビュー、タップで入力</item>
+        <item>区切りごとに表示</item>
+    </string-array>
+</resources>

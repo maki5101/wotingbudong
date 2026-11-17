@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Shuohuaa" parent="Theme.Material3.DayNight.NoActionBar" />
+    <!-- 只弹一个对话框的界面（Tasker 插件的选择框）：底下透明 -->
+    <style name="Theme.Shuohuaa.Translucent" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+</resources>
